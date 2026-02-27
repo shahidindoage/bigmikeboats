@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Boat Listings</title>
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial; }
+
+body { background:#f4f6f9; padding:40px; }
+
+h1 { text-align:center; margin-bottom:30px; }
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  display:flex;
+  flex-direction:column;
+}
+
+.card img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-body { padding:15px; flex:1; }
+
+.price { color:#0a7cff; font-weight:bold; margin:10px 0; }
+
+.meta { font-size:14px; color:#555; margin-bottom:5px; }
+
+.btn {
+  margin-top:10px;
+  display:inline-block;
+  background:#2267ab;
+  color:white;
+  padding:8px 12px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.btn:hover { background:#095fd1; }
+
+/* MODAL */
+.modal {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.modal-content {
+  background:white;
+  max-width:1000px;
+  width:100%;
+  border-radius:10px;
+  padding:20px;
+  max-height:90vh;
+  overflow-y:auto;
+  position:relative;
+}
+
+.close {
+  position:absolute;
+  right:15px;
+  top:10px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.detail-img {
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+
+.thumb-gallery {
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+  overflow-x:auto;
+}
+
+.thumb {
+  width:90px;
+  height:70px;
+  object-fit:cover;
+  border-radius:6px;
+  cursor:pointer;
+  opacity:0.7;
+  border:2px solid transparent;
+}
+
+.active-thumb {
+  opacity:1;
+  border:2px solid #0a7cff;
+}
+
+.detail-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+  gap:15px;
+  margin-top:15px;
+}
+
+.detail-item {
+  background:#f4f6f9;
+  padding:10px;
+  border-radius:6px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Available Boats</h1>
+
+<div class="grid">
+<% boats.forEach((boat, index) => { 
+  const image = boat.Images && boat.Images.length 
+    ? boat.Images[0].Uri 
+    : "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200";
+
+  const location = boat.BoatLocation
+    ? boat.BoatLocation.BoatCityName + ", " + boat.BoatLocation.BoatStateCode
+    : "Unknown";
+%>
+
+<div class="card">
+  <img src="<%= image %>" />
+  <div class="card-body">
+    <h3><%= boat.ModelYear || "" %> <%= boat.MakeString || "" %> <%= boat.Model || "" %></h3>
+    <div class="price"><%= boat.Price || "Price on Request" %></div>
+    <div class="meta">Length: <%= boat.LengthOverall || boat.NominalLength || "N/A" %></div>
+    <div class="meta">Power: <%= boat.TotalEnginePowerQuantity || "N/A" %></div>
+    <div class="meta">Location: <%= location %></div>
+    <div class="btn" onclick="showDetails(<%= index %>)">View Details</div>
+  </div>
+</div>
+
+<% }) %>
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">✖</span>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+const boatsData = <%- JSON.stringify(boats) %>;
+const SAMPLE_IMAGE = "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200";
+
+function showDetails(index) {
+  const boat = boatsData[index];
+  const modal = document.getElementById("modal");
+  const modalContent = document.getElementById("modalContent");
+
+  const images = boat.Images && boat.Images.length
+    ? boat.Images.map(img => img.Uri)
+    : [SAMPLE_IMAGE];
+
+  const location = boat.BoatLocation
+    ? boat.BoatLocation.BoatCityName + ", " + boat.BoatLocation.BoatStateCode
+    : "Unknown";
+
+  const description = boat.PublicRemarks
+    ? boat.PublicRemarks.substring(0,600) + "..."
+    : "No description available.";
+
+  modalContent.innerHTML = `
+    <img id="mainImage" src="${images[0]}" class="detail-img"/>
+
+    <div class="thumb-gallery">
+      ${images.map((img,i)=>`
+        <img src="${img}" 
+             class="thumb ${i===0?'active-thumb':''}" 
+             onclick="changeImage('${img}',this)">
+      `).join("")}
+    </div>
+
+    <h2>${boat.ModelYear || ""} ${boat.MakeString || ""} ${boat.Model || ""}</h2>
+    <p style="font-size:20px;color:#0a7cff;font-weight:bold;margin:10px 0;">
+      ${boat.Price || "Price on Request"}
+    </p>
+
+    <div class="detail-grid">
+      <div class="detail-item"><strong>Year</strong><br>${boat.ModelYear || "N/A"}</div>
+      <div class="detail-item"><strong>Length</strong><br>${boat.LengthOverall || boat.NominalLength || "N/A"}</div>
+      <div class="detail-item"><strong>Power</strong><br>${boat.TotalEnginePowerQuantity || "N/A"}</div>
+      <div class="detail-item"><strong>Fuel</strong><br>${boat.FuelType || "N/A"}</div>
+      <div class="detail-item"><strong>Hull</strong><br>${boat.HullMaterial || "N/A"}</div>
+      <div class="detail-item"><strong>Location</strong><br>${location}</div>
+    </div>
+
+    <div style="margin-top:25px;">
+      <h3>Description</h3>
+      <p style="line-height:1.6;color:#444;">${description}</p>
+    </div>
+  `;
+
+  modal.style.display = "flex";
+}
+
+function changeImage(src, element){
+  document.getElementById("mainImage").src = src;
+  document.querySelectorAll(".thumb").forEach(t=>t.classList.remove("active-thumb"));
+  element.classList.add("active-thumb");
+}
+
+function closeModal(){
+  document.getElementById("modal").style.display="none";
+}
+
+window.onclick=function(e){
+  if(e.target===document.getElementById("modal")){
+    closeModal();
+  }
+}
+</script>
+
+</body>
+</html>
