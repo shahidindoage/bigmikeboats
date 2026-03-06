@@ -10,14 +10,58 @@ dotenv.config();
 const app = express();
 app.set("view engine", "ejs");
 app.use(cors());
+app.use(express.json());
 
+// Main page - loads with all boats by default
 app.get("/", async (req, res) => {
-  const response = await fetch(process.env.BOAT_API_URL1);
-  const data = await response.json();
+  try {
+    const response = await fetch(process.env.BOAT_API_URL_ALL);
+    const data = await response.json();
+    const boats = data.results || data;
+    res.render("index", { boats });
+  } catch (error) {
+    console.error("Error fetching boats:", error);
+    res.render("index", { boats: [] });
+  }
+});
 
-  const boats = data.results || data;
+// API endpoint for all boats
+app.get("/api/boats/all", async (req, res) => {
+  try {
+    const response = await fetch(process.env.BOAT_API_URL_ALL);
+    const data = await response.json();
+    const boats = data.results || data;
+    res.json({ boats });
+  } catch (error) {
+    console.error("Error fetching all boats:", error);
+    res.status(500).json({ error: "Failed to fetch all boats" });
+  }
+});
 
-  res.render("index", { boats });
+// API endpoint for active boats
+app.get("/api/boats/active", async (req, res) => {
+  try {
+    const response = await fetch(process.env.BOAT_API_URL_ACTIVE);
+    const data = await response.json();
+    const boats = data.results || data;
+    res.json({ boats });
+  } catch (error) {
+    console.error("Error fetching active boats:", error);
+    res.status(500).json({ error: "Failed to fetch active boats" });
+  }
+});
+
+// API endpoint for sold boats
+app.get("/api/boats/sold", async (req, res) => {
+  try {
+    const response = await fetch(process.env.BOAT_API_URL_SOLD);
+    const data = await response.json();
+    const boats = data.results || data;
+    res.json({ boats });
+  } catch (error) {
+    console.error("Error fetching sold boats:", error);
+    res.status(500).json({ error: "Failed to fetch sold boats" });
+  }
 });
 
 app.listen(3000, () => {

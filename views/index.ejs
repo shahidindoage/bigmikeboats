@@ -3,238 +3,1243 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Boat Listings</title>
+<title>Big Mike Boats | Premium Boat Listings</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family:Arial; }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
 
-body { background:#f4f6f9; padding:40px; }
+:root {
+  --primary-color: #1a4d7a;
+  --primary-dark: #0f3554;
+  --secondary-color: #b51628;
+  --text-dark: #1a1a1a;
+  --text-light: #666;
+  --border-color: #e0e0e0;
+  --bg-light: #f8f9fa;
+  --success-color: #28a745;
+  --sold-color: #dc3545;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
+}
 
-h1 { text-align:center; margin-bottom:30px; }
+body { 
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecef 100%);
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* Header */
+.header {
+  background: white;
+  color: var(--text-dark);
+  padding: 0;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: none;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.header-main {
+  padding: 15px 40px;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border-radius: 12px;
+  color: white;
+  min-width: 100px;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 11px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Search & Filter Section */
+.search-section {
+  background: white;
+  padding: 30px 40px;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.search-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-title i {
+  color: var(--secondary-color);
+}
+
+.search-filters {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 14px 50px 14px 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(26,77,122,0.1);
+}
+
+.search-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  font-size: 18px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Desktop Filters */
+.status-filters {
+  display: flex;
+  gap: 8px;
+  background: var(--bg-light);
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.status-btn {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-btn:hover {
+  background: rgba(26,77,122,0.1);
+}
+
+.status-btn.active {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.25);
+}
+
+/* Mobile Dropdown Filter */
+.mobile-filter-dropdown {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.mobile-filter-select {
+  width: 100%;
+  padding: 14px 40px 14px 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+  background: white;
+  cursor: pointer;
+  appearance: none;
+  transition: all 0.3s;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+.mobile-filter-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(26,77,122,0.1);
+}
+
+.mobile-filter-select option {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.results-info {
+  margin-top: 15px;
+  padding: 12px 0;
+  color: var(--text-light);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loading-spinner {
+  display: none;
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Main Content */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 40px 0;
+}
 
 .grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
 }
 
+/* Boat Cards */
 .card {
-  background:white;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 4px 12px rgba(0,0,0,0.1);
-  display:flex;
-  flex-direction:column;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid var(--border-color);
 }
 
-.card img {
-  width:100%;
-  height:200px;
-  object-fit:cover;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
 }
 
-.card-body { padding:15px; flex:1; }
-
-.price { color:#0a7cff; font-weight:bold; margin:10px 0; }
-
-.meta { font-size:14px; color:#555; margin-bottom:5px; }
-
-.btn {
-  margin-top:10px;
-  display:inline-block;
-  background:#2267ab;
-  color:white;
-  padding:8px 12px;
-  border-radius:5px;
-  cursor:pointer;
+.card-image {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+  background: var(--bg-light);
 }
 
-.btn:hover { background:#095fd1; }
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
 
-/* MODAL */
+.card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.status-label {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+}
+
+.status-active {
+  background: var(--success-color);
+  color: white;
+}
+
+.status-sold {
+  background: var(--sold-color);
+  color: white;
+}
+
+.status-all {
+  background: var(--primary-color);
+  color: white;
+}
+
+.card-body { 
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.price { 
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.spec-item i {
+  color: var(--primary-color);
+  font-size: 14px;
+  width: 16px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.location i {
+  color: var(--secondary-color);
+}
+
+.btn-details {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-details:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(181,22,40,0.4);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-light);
+}
+
+.empty-state i {
+  font-size: 64px;
+  color: var(--border-color);
+  margin-bottom: 20px;
+}
+
+.empty-state h3 {
+  font-size: 24px;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+/* Modal */
 .modal {
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.6);
-  justify-content:center;
-  align-items:center;
-  padding:20px;
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .modal-content {
-  background:white;
-  max-width:1000px;
-  width:100%;
-  border-radius:10px;
-  padding:20px;
-  max-height:90vh;
-  overflow-y:auto;
-  position:relative;
+  background: white;
+  max-width: 1100px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 20px 30px;
+  border-bottom: 2px solid var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
 .close {
-  position:absolute;
-  right:15px;
-  top:10px;
-  font-size:22px;
-  cursor:pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--text-dark);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close:hover {
+  background: var(--secondary-color);
+  color: white;
+  transform: rotate(90deg);
+}
+
+.modal-body {
+  padding: 30px;
 }
 
 .detail-img {
-  width:100%;
-  height:350px;
-  object-fit:cover;
-  border-radius:8px;
-  margin-bottom:15px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
 }
 
 .thumb-gallery {
-  display:flex;
-  gap:10px;
-  margin-bottom:20px;
-  overflow-x:auto;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  padding-bottom: 10px;
 }
 
 .thumb {
-  width:90px;
-  height:70px;
-  object-fit:cover;
-  border-radius:6px;
-  cursor:pointer;
-  opacity:0.7;
-  border:2px solid transparent;
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  border: 3px solid transparent;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.thumb:hover {
+  opacity: 0.8;
 }
 
 .active-thumb {
-  opacity:1;
-  border:2px solid #0a7cff;
+  opacity: 1;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(26,77,122,0.2);
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 25px;
+}
+
+.detail-info h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.detail-price {
+  font-size: 32px;
+  color: var(--secondary-color);
+  font-weight: 700;
 }
 
 .detail-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
-  gap:15px;
-  margin-top:15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+  padding: 25px;
+  background: var(--bg-light);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
 }
 
 .detail-item {
-  background:#f4f6f9;
-  padding:10px;
-  border-radius:6px;
-  font-size:14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
+
+.detail-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.description-section {
+  margin-top: 30px;
+}
+
+.description-section h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.description-section h3 i {
+  color: var(--secondary-color);
+}
+
+.description-section p {
+  line-height: 1.8;
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-stats {
+    display: none;
+  }
+  
+  .header-main {
+    padding: 15px 20px;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .search-section {
+    padding: 20px;
+  }
+  
+  .search-filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .search-box {
+    min-width: 100%;
+  }
+  
+  .filter-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .filter-label {
+    font-size: 13px;
+  }
+  
+  /* Hide desktop filters on mobile */
+  .status-filters {
+    display: none !important;
+  }
+  
+  /* Show mobile dropdown on mobile */
+  .mobile-filter-dropdown {
+    display: block;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .results-info {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 8px; }
+.mb-2 { margin-bottom: 8px; }
 </style>
 </head>
 
 <body>
 
-<h1>Available Boats</h1>
-
-<div class="grid">
-<% boats.forEach((boat, index) => { 
-  const image = boat.Images && boat.Images.length 
-    ? boat.Images[0].Uri 
-    : "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200";
-
-  const location = boat.BoatLocation
-    ? boat.BoatLocation.BoatCityName + ", " + boat.BoatLocation.BoatStateCode
-    : "Unknown";
-%>
-
-<div class="card">
-  <img src="<%= image %>" />
-  <div class="card-body">
-    <h3><%= boat.ModelYear || "" %> <%= boat.MakeString || "" %> <%= boat.Model || "" %></h3>
-    <div class="price"><%= boat.Price || "Price on Request" %></div>
-    <div class="meta">Length: <%= boat.LengthOverall || boat.NominalLength || "N/A" %></div>
-    <div class="meta">Power: <%= boat.TotalEnginePowerQuantity || "N/A" %></div>
-    <div class="meta">Location: <%= location %></div>
-    <div class="btn" onclick="showDetails(<%= index %>)">View Details</div>
+<!-- Header -->
+<div class="header">
+  <div class="header-main">
+    <div class="header-content">
+      <a href="/" class="logo">
+        <img src="https://bigmikeboats.com/wp-content/uploads/2025/03/Big-Mike-Boats-Final-1-1.png" alt="Big Mike Boats">
+      </a>
+      
+      <div class="header-stats">
+        <div class="stat-item">
+          <span class="stat-number" id="totalBoats"><%= boats.length %></span>
+          <span class="stat-label">Total Boats</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="displayCount"><%= boats.length %></span>
+          <span class="stat-label">Displayed</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<% }) %>
+<!-- Search & Filter Section -->
+<div class="search-section">
+  <div class="search-container">
+    <div class="search-title">
+      <i class="fas fa-search"></i> Find Your Perfect Boat
+    </div>
+    
+    <div class="search-filters">
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search by make, model, year, or location..."
+          autocomplete="off"
+        >
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      
+     <div class="filter-group">
+  <span class="filter-label">Filter:</span>
+  
+  <!-- Desktop Filters -->
+  <div class="status-filters">
+    <button class="status-btn active" data-status="all" onclick="filterByStatus('all')">
+      <i class="fas fa-list"></i>
+      All Boats
+      <span class="status-badge" id="allBadge"><%= boats.length %></span>
+    </button>
+    <button class="status-btn" data-status="active" onclick="filterByStatus('active')">
+      <i class="fas fa-check-circle"></i>
+      Active
+      <span class="status-badge" id="activeBadge">0</span>
+    </button>
+    <button class="status-btn" data-status="sold" onclick="filterByStatus('sold')">
+      <i class="fas fa-tag"></i>
+      Sold
+      <span class="status-badge" id="soldBadge">0</span>
+    </button>
+  </div>
+  
+  <!-- Mobile Dropdown -->
+  <div class="mobile-filter-dropdown">
+    <select class="mobile-filter-select" id="mobileFilterSelect" onchange="filterByStatusMobile(this.value)">
+      <option value="all">📋 All Boats (<span id="allBadgeMobile"><%= boats.length %></span>)</option>
+      <option value="active">✅ Active (<span id="activeBadgeMobile">0</span>)</option>
+      <option value="sold">🏷️ Sold (<span id="soldBadgeMobile">0</span>)</option>
+    </select>
+  </div>
+</div>
+      <div class="loading-spinner" id="loadingSpinner"></div>
+    </div>
+    
+    <div class="results-info">
+      <span id="resultsCount">Showing <%= boats.length %> boats</span>
+      <span id="filterStatus">Filter: All Boats</span>
+    </div>
+  </div>
 </div>
 
-<!-- MODAL -->
-<div class="modal" id="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">✖</span>
-    <div id="modalContent"></div>
+<!-- Main Content -->
+<div class="container">
+  <div class="grid" id="boatsGrid">
+    <% boats.forEach((boat, index) => { 
+      const image = boat.Images && boat.Images.length 
+        ? boat.Images[0].Uri 
+        : "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200";
+
+      const location = boat.BoatLocation
+        ? boat.BoatLocation.BoatCityName + ", " + boat.BoatLocation.BoatStateCode
+        : "Location Not Specified";
+        
+      const title = `${boat.ModelYear || ''} ${boat.MakeString || ''} ${boat.Model || ''}`.trim() || 'Boat Details';
+    %>
+
+    <div class="card" data-index="<%= index %>">
+      <div class="card-image">
+        <img src="<%= image %>" alt="<%= title %>" loading="lazy" />
+        <span class="status-label status-all">Listed</span>
+      </div>
+      
+      <div class="card-body">
+        <h3 class="card-title"><%= title %></h3>
+        <div class="price"><%= boat.Price || "Price on Request" %></div>
+        
+        <div class="specs">
+          <div class="spec-item">
+            <i class="fas fa-ruler-combined"></i>
+            <span><%= boat.LengthOverall || boat.NominalLength || "N/A" %></span>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-calendar"></i>
+            <span><%= boat.ModelYear || "N/A" %></span>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <span><%= boat.TotalEnginePowerQuantity || "N/A" %></span>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-gas-pump"></i>
+            <span><%= boat.FuelType || "N/A" %></span>
+          </div>
+        </div>
+        
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span><%= location %></span>
+        </div>
+        
+        <button class="btn-details" onclick="showDetails(<%= index %>)">
+          View Full Details
+        </button>
+      </div>
+    </div>
+
+    <% }) %>
+  </div>
+  
+  <div class="empty-state" id="emptyState" style="display: none;">
+    <i class="fas fa-search"></i>
+    <h3>No boats found</h3>
+    <p>Try adjusting your search or filters</p>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal" onclick="handleModalClick(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <h2 class="modal-title" id="modalTitle">Boat Details</h2>
+      <button class="close" onclick="closeModal()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="modal-body" id="modalContent"></div>
   </div>
 </div>
 
 <script>
-const boatsData = <%- JSON.stringify(boats) %>;
+let boatsData = <%- JSON.stringify(boats) %>;
+let currentStatus = 'all';
 const SAMPLE_IMAGE = "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200";
+
+// Initialize badge counts on page load
+async function initializeBadgeCounts() {
+  try {
+    // Fetch active boats count
+    const activeResponse = await fetch('/api/boats/active');
+    const activeData = await activeResponse.json();
+    const activeBoats = activeData.boats || [];
+    document.getElementById('activeBadge').textContent = activeBoats.length;
+    
+    // Fetch sold boats count
+    const soldResponse = await fetch('/api/boats/sold');
+    const soldData = await soldResponse.json();
+    const soldBoats = soldData.boats || [];
+    document.getElementById('soldBadge').textContent = soldBoats.length;
+  } catch (error) {
+    console.error('Error fetching badge counts:', error);
+  }
+}
+// Mobile filter function
+function filterByStatusMobile(status) {
+  filterByStatus(status);
+}
+
+// Update mobile dropdown badges too in initializeBadgeCounts
+async function initializeBadgeCounts() {
+  try {
+    // Fetch active boats count
+    const activeResponse = await fetch('/api/boats/active');
+    const activeData = await activeResponse.json();
+    const activeBoats = activeData.boats || [];
+    const activeCount = activeBoats.length;
+    document.getElementById('activeBadge').textContent = activeCount;
+    
+    // Fetch sold boats count
+    const soldResponse = await fetch('/api/boats/sold');
+    const soldData = await soldResponse.json();
+    const soldBoats = soldData.boats || [];
+    const soldCount = soldBoats.length;
+    document.getElementById('soldBadge').textContent = soldCount;
+    
+    // Update mobile dropdown options
+    updateMobileDropdown();
+  } catch (error) {
+    console.error('Error fetching badge counts:', error);
+  }
+}
+
+// Update mobile dropdown with current counts
+function updateMobileDropdown() {
+  const allCount = document.getElementById('allBadge').textContent;
+  const activeCount = document.getElementById('activeBadge').textContent;
+  const soldCount = document.getElementById('soldBadge').textContent;
+  
+  const select = document.getElementById('mobileFilterSelect');
+  select.options[0].text = `📋 All Boats (${allCount})`;
+  select.options[1].text = `✅ Active (${activeCount})`;
+  select.options[2].text = `🏷️ Sold (${soldCount})`;
+}
+// Call on page load
+initializeBadgeCounts();
+
+document.getElementById('searchInput').addEventListener('input', function(e) {
+  const searchTerm = e.target.value.toLowerCase();
+  filterAndDisplayBoats(searchTerm);
+});
+
+function filterAndDisplayBoats(searchTerm = '') {
+  const grid = document.getElementById('boatsGrid');
+  const emptyState = document.getElementById('emptyState');
+  let visibleCount = 0;
+  
+  boatsData.forEach((boat, index) => {
+    const card = grid.querySelector(`[data-index="${index}"]`);
+    if (!card) return;
+    
+    const title = `${boat.ModelYear || ''} ${boat.MakeString || ''} ${boat.Model || ''}`.toLowerCase();
+    const location = boat.BoatLocation 
+      ? `${boat.BoatLocation.BoatCityName} ${boat.BoatLocation.BoatStateCode}`.toLowerCase()
+      : '';
+    const year = (boat.ModelYear || '').toString();
+    
+    const matches = title.includes(searchTerm) || 
+                   location.includes(searchTerm) || 
+                   year.includes(searchTerm);
+    
+    if (matches) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  
+  document.getElementById('resultsCount').textContent = 
+    `Showing ${visibleCount} of ${boatsData.length} boats`;
+  
+  document.getElementById('displayCount').textContent = visibleCount;
+  
+  if (visibleCount === 0) {
+    grid.style.display = 'none';
+    emptyState.style.display = 'block';
+  } else {
+    grid.style.display = 'grid';
+    emptyState.style.display = 'none';
+  }
+}
+
+async function filterByStatus(status) {
+  if (currentStatus === status) return;
+  
+  currentStatus = status;
+  
+  document.querySelectorAll('.status-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.status === status);
+  });
+  
+  const spinner = document.getElementById('loadingSpinner');
+  const grid = document.getElementById('boatsGrid');
+  spinner.style.display = 'block';
+  grid.style.opacity = '0.5';
+  
+  try {
+    const endpoint = `/api/boats/${status}`;
+    const response = await fetch(endpoint);
+    const data = await response.json();
+    
+    boatsData = data.boats || [];
+    updateBoatsDisplay(status);
+    updateCounts();
+    
+    document.getElementById('searchInput').value = '';
+    
+    const statusText = status === 'all' ? 'All Boats' : (status === 'active' ? 'Active' : 'Sold');
+    document.getElementById('filterStatus').textContent = `Filter: ${statusText}`;
+    
+  } catch (error) {
+    console.error('Error fetching boats:', error);
+    alert('Failed to load boats. Please try again.');
+  } finally {
+    spinner.style.display = 'none';
+    grid.style.opacity = '1';
+  }
+}
+
+function updateBoatsDisplay(status) {
+  const grid = document.getElementById('boatsGrid');
+  const emptyState = document.getElementById('emptyState');
+  
+  if (boatsData.length === 0) {
+    grid.style.display = 'none';
+    emptyState.style.display = 'block';
+    document.getElementById('resultsCount').textContent = 'No boats found';
+    document.getElementById('displayCount').textContent = '0';
+    return;
+  }
+  
+  grid.style.display = 'grid';
+  emptyState.style.display = 'none';
+  
+  grid.innerHTML = boatsData.map((boat, index) => {
+    const image = boat.Images && boat.Images.length 
+      ? boat.Images[0].Uri 
+      : SAMPLE_IMAGE;
+    
+    const location = boat.BoatLocation
+      ? `${boat.BoatLocation.BoatCityName}, ${boat.BoatLocation.BoatStateCode}`
+      : "Location Not Specified";
+    
+    const title = `${boat.ModelYear || ''} ${boat.MakeString || ''} ${boat.Model || ''}`.trim() || 'Boat Details';
+    
+    let statusClass, statusText;
+    if (status === 'all') {
+      statusClass = 'status-all';
+      statusText = 'Listed';
+    } else if (status === 'active') {
+      statusClass = 'status-active';
+      statusText = 'Available';
+    } else {
+      statusClass = 'status-sold';
+      statusText = 'Sold';
+    }
+    
+    return `
+      <div class="card" data-index="${index}">
+        <div class="card-image">
+          <img src="${image}" alt="${title}" loading="lazy" />
+          <span class="status-label ${statusClass}">${statusText}</span>
+        </div>
+        
+        <div class="card-body">
+          <h3 class="card-title">${title}</h3>
+          <div class="price">${boat.Price || "Price on Request"}</div>
+          
+          <div class="specs">
+            <div class="spec-item">
+              <i class="fas fa-ruler-combined"></i>
+              <span>${boat.LengthOverall || boat.NominalLength || "N/A"}</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-calendar"></i>
+              <span>${boat.ModelYear || "N/A"}</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>${boat.TotalEnginePowerQuantity || "N/A"}</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-gas-pump"></i>
+              <span>${boat.FuelType || "N/A"}</span>
+            </div>
+          </div>
+          
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>${location}</span>
+          </div>
+          
+          <button class="btn-details" onclick="showDetails(${index})">
+            View Full Details
+          </button>
+        </div>
+      </div>
+    `;
+  }).join('');
+  
+  document.getElementById('resultsCount').textContent = `Showing ${boatsData.length} boats`;
+  document.getElementById('displayCount').textContent = boatsData.length;
+}
+
+function updateCounts() {
+  const count = boatsData.length;
+  document.getElementById('totalBoats').textContent = count;
+  
+  if (currentStatus === 'all') {
+    document.getElementById('allBadge').textContent = count;
+  } else if (currentStatus === 'active') {
+    document.getElementById('activeBadge').textContent = count;
+  } else {
+    document.getElementById('soldBadge').textContent = count;
+  }
+}
 
 function showDetails(index) {
   const boat = boatsData[index];
   const modal = document.getElementById("modal");
   const modalContent = document.getElementById("modalContent");
+  const modalTitle = document.getElementById("modalTitle");
 
   const images = boat.Images && boat.Images.length
     ? boat.Images.map(img => img.Uri)
     : [SAMPLE_IMAGE];
 
   const location = boat.BoatLocation
-    ? boat.BoatLocation.BoatCityName + ", " + boat.BoatLocation.BoatStateCode
-    : "Unknown";
+    ? `${boat.BoatLocation.BoatCityName}, ${boat.BoatLocation.BoatStateCode}`
+    : "Location Not Specified";
 
-  const description = boat.PublicRemarks
-    ? boat.PublicRemarks.substring(0,600) + "..."
-    : "No description available.";
+  const description = boat.PublicRemarks || "No description available for this boat.";
+  
+  const title = `${boat.ModelYear || ''} ${boat.MakeString || ''} ${boat.Model || ''}`.trim() || 'Boat Details';
+  
+  modalTitle.textContent = title;
 
   modalContent.innerHTML = `
-    <img id="mainImage" src="${images[0]}" class="detail-img"/>
+    <img id="mainImage" src="${images[0]}" class="detail-img" alt="${title}"/>
 
     <div class="thumb-gallery">
-      ${images.map((img,i)=>`
+      ${images.map((img, i) => `
         <img src="${img}" 
-             class="thumb ${i===0?'active-thumb':''}" 
-             onclick="changeImage('${img}',this)">
+             class="thumb ${i === 0 ? 'active-thumb' : ''}" 
+             onclick="changeImage('${img}', this)"
+             alt="Thumbnail ${i + 1}">
       `).join("")}
     </div>
 
-    <h2>${boat.ModelYear || ""} ${boat.MakeString || ""} ${boat.Model || ""}</h2>
-    <p style="font-size:20px;color:#0a7cff;font-weight:bold;margin:10px 0;">
-      ${boat.Price || "Price on Request"}
-    </p>
-
-    <div class="detail-grid">
-      <div class="detail-item"><strong>Year</strong><br>${boat.ModelYear || "N/A"}</div>
-      <div class="detail-item"><strong>Length</strong><br>${boat.LengthOverall || boat.NominalLength || "N/A"}</div>
-      <div class="detail-item"><strong>Power</strong><br>${boat.TotalEnginePowerQuantity || "N/A"}</div>
-      <div class="detail-item"><strong>Fuel</strong><br>${boat.FuelType || "N/A"}</div>
-      <div class="detail-item"><strong>Hull</strong><br>${boat.HullMaterial || "N/A"}</div>
-      <div class="detail-item"><strong>Location</strong><br>${location}</div>
+    <div class="detail-header">
+      <div class="detail-info">
+        <h2>${title}</h2>
+        <div class="detail-price">${boat.Price || "Price on Request"}</div>
+      </div>
     </div>
 
-    <div style="margin-top:25px;">
-      <h3>Description</h3>
-      <p style="line-height:1.6;color:#444;">${description}</p>
+    <div class="detail-grid">
+      <div class="detail-item">
+        <span class="detail-label">Year</span>
+        <span class="detail-value">${boat.ModelYear || "N/A"}</span>
+      </div>
+      <div class="detail-item">
+        <span class="detail-label">Length</span>
+        <span class="detail-value">${boat.LengthOverall || boat.NominalLength || "N/A"}</span>
+      </div>
+      <div class="detail-item">
+        <span class="detail-label">Engine Power</span>
+        <span class="detail-value">${boat.TotalEnginePowerQuantity || "N/A"}</span>
+      </div>
+      <div class="detail-item">
+        <span class="detail-label">Fuel Type</span>
+        <span class="detail-value">${boat.FuelType || "N/A"}</span>
+      </div>
+      <div class="detail-item">
+        <span class="detail-label">Hull Material</span>
+        <span class="detail-value">${boat.HullMaterial || "N/A"}</span>
+      </div>
+      <div class="detail-item">
+        <span class="detail-label">Location</span>
+        <span class="detail-value">${location}</span>
+      </div>
+    </div>
+
+    <div class="description-section">
+      <h3><i class="fas fa-info-circle"></i> Description</h3>
+      <p>${description}</p>
     </div>
   `;
 
   modal.style.display = "flex";
+  document.body.style.overflow = 'hidden';
 }
 
-function changeImage(src, element){
+function changeImage(src, element) {
   document.getElementById("mainImage").src = src;
-  document.querySelectorAll(".thumb").forEach(t=>t.classList.remove("active-thumb"));
+  document.querySelectorAll(".thumb").forEach(t => t.classList.remove("active-thumb"));
   element.classList.add("active-thumb");
 }
 
-function closeModal(){
-  document.getElementById("modal").style.display="none";
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+  document.body.style.overflow = 'auto';
 }
 
-window.onclick=function(e){
-  if(e.target===document.getElementById("modal")){
+function handleModalClick(event) {
+  if (event.target.id === 'modal') {
     closeModal();
   }
 }
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+});
 </script>
 
 </body>
