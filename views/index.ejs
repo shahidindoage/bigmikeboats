@@ -30,10 +30,19 @@
   --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
 }
 
+html {
+  height: auto !important;
+}
+
 body { 
   background: linear-gradient(135deg, #f5f7fa 0%, #e8ecef 100%);
+  height: auto !important;
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+}
+
+.container {
+  min-height: auto;
 }
 
 /* Header */
@@ -101,32 +110,57 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
-
-/* Search & Filter Section */
+/* Search & Filter Section - Dark Overlay Design */
 .search-section {
-  background: white;
-  padding: 30px 40px;
-  box-shadow: var(--shadow-sm);
-  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.65) 100%),
+              url('http://bigmikeboats.com/wp-content/uploads/2026/03/boat.jpg') center/cover;
+  padding: 40px 40px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  position: relative;
+  backdrop-filter: blur(10px);
+     padding-top: 250px;
+}
+
+/* Optional: Add texture overlay */
+.search-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(45deg, transparent 48%, rgba(255,255,255,0.02) 49%, rgba(255,255,255,0.02) 51%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255,255,255,0.02) 49%, rgba(255,255,255,0.02) 51%, transparent 52%);
+  background-size: 20px 20px;
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 .search-container {
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .search-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--primary-color);
-  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
 }
 
 .search-title i {
   color: var(--secondary-color);
+  font-size: 24px;
+  filter: drop-shadow(0 2px 6px rgba(181,22,40,0.6));
 }
 
 .search-filters {
@@ -144,17 +178,27 @@ body {
 
 .search-box input {
   width: 100%;
-  padding: 14px 50px 14px 20px;
-  border: 2px solid var(--border-color);
+  padding: 16px 50px 16px 20px;
+  border: 2px solid rgba(255,255,255,0.15);
   border-radius: 12px;
   font-size: 15px;
   transition: all 0.3s;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.search-box input::placeholder {
+  color: rgba(0,0,0,0.4);
+  font-weight: 400;
 }
 
 .search-box input:focus {
   outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(26,77,122,0.1);
+  border-color: var(--secondary-color);
+  box-shadow: 0 6px 24px rgba(181,22,40,0.3), 0 0 0 4px rgba(181,22,40,0.1);
+  background: #ffffff;
 }
 
 .search-icon {
@@ -162,67 +206,99 @@ body {
   right: 18px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--text-light);
+  color: var(--primary-color);
   font-size: 18px;
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.search-box input:focus + .search-icon {
+  opacity: 1;
+  color: var(--secondary-color);
 }
 
 .filter-group {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
 }
 
 .filter-label {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
 }
 
-/* Desktop Filters */
 .status-filters {
   display: flex;
   gap: 8px;
-  background: var(--bg-light);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
   padding: 6px;
   border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 .status-btn {
-  padding: 10px 20px;
+  padding: 11px 22px;
   border: none;
   background: transparent;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s;
-  color: var(--text-dark);
+  color: rgba(255,255,255,0.9);
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .status-btn:hover {
-  background: rgba(26,77,122,0.1);
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-1px);
+  color: #ffffff;
 }
 
 .status-btn.active {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  background: linear-gradient(135deg, var(--secondary-color), #9d1220);
   color: white;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 16px rgba(181,22,40,0.5);
+  transform: translateY(-2px);
+}
+
+.status-btn.active i {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
 .status-badge {
   display: inline-flex;
   align-items: center;
-  padding: 2px 8px;
+  padding: 3px 9px;
   border-radius: 12px;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(4px);
+  min-width: 24px;
+  justify-content: center;
 }
 
-/* Mobile Dropdown Filter */
+.status-btn.active .status-badge {
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.status-btn:not(.active) .status-badge {
+  background: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.95);
+}
+
 .mobile-filter-dropdown {
   display: none;
   position: relative;
@@ -231,57 +307,75 @@ body {
 
 .mobile-filter-select {
   width: 100%;
-  padding: 14px 40px 14px 20px;
-  border: 2px solid var(--border-color);
+  padding: 16px 50px 16px 20px;
+  border: 2px solid rgba(255,255,255,0.15);
   border-radius: 12px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-dark);
-  background: white;
+  background: rgba(255,255,255,0.95);
   cursor: pointer;
   appearance: none;
   transition: all 0.3s;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='%231a4d7a' d='M7 10L2 5h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 15px center;
+  background-position: right 18px center;
 }
 
 .mobile-filter-select:focus {
   outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(26,77,122,0.1);
-}
-
-.mobile-filter-select option {
-  padding: 10px;
-  font-size: 15px;
+  border-color: var(--secondary-color);
+  box-shadow: 0 6px 24px rgba(181,22,40,0.3), 0 0 0 4px rgba(181,22,40,0.1);
+  background: #ffffff;
 }
 
 .results-info {
-  margin-top: 15px;
-  padding: 12px 0;
-  color: var(--text-light);
+  margin-top: 20px;
+  padding: 14px 24px;
+  color: #ffffff;
   font-size: 14px;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.results-info span {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .loading-spinner {
   display: none;
-  width: 24px;
-  height: 24px;
-  border: 3px solid var(--border-color);
-  border-top-color: var(--primary-color);
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(255,255,255,0.2);
+  border-top-color: var(--secondary-color);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
 
-/* Main Content */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-section {
+    padding: 30px 20px;
+  }
+  
+  .search-title {
+    font-size: 18px;
+  }
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -295,7 +389,6 @@ body {
   margin-top: 20px;
 }
 
-/* Boat Cards */
 .card {
   background: white;
   border-radius: 16px;
@@ -443,7 +536,6 @@ body {
   box-shadow: 0 6px 20px rgba(181,22,40,0.4);
 }
 
-/* Empty State */
 .empty-state {
   text-align: center;
   padding: 80px 20px;
@@ -462,7 +554,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -659,7 +750,6 @@ body {
   font-size: 15px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .header-stats {
     display: none;
@@ -702,12 +792,10 @@ body {
     font-size: 13px;
   }
   
-  /* Hide desktop filters on mobile */
   .status-filters {
     display: none !important;
   }
   
-  /* Show mobile dropdown on mobile */
   .mobile-filter-dropdown {
     display: block;
   }
@@ -726,17 +814,11 @@ body {
     align-items: flex-start;
   }
 }
-
-/* Utility classes */
-.text-center { text-align: center; }
-.mt-2 { margin-top: 8px; }
-.mb-2 { margin-bottom: 8px; }
 </style>
 </head>
 
 <body>
 
-<!-- Header -->
 <div class="header">
   <div class="header-main">
     <div class="header-content">
@@ -758,7 +840,6 @@ body {
   </div>
 </div>
 
-<!-- Search & Filter Section -->
 <div class="search-section">
   <div class="search-container">
     <div class="search-title">
@@ -776,37 +857,36 @@ body {
         <i class="fas fa-search search-icon"></i>
       </div>
       
-     <div class="filter-group">
-  <span class="filter-label">Filter:</span>
-  
-  <!-- Desktop Filters -->
-  <div class="status-filters">
-    <button class="status-btn active" data-status="all" onclick="filterByStatus('all')">
-      <i class="fas fa-list"></i>
-      All Boats
-      <span class="status-badge" id="allBadge"><%= boats.length %></span>
-    </button>
-    <button class="status-btn" data-status="active" onclick="filterByStatus('active')">
-      <i class="fas fa-check-circle"></i>
-      Active
-      <span class="status-badge" id="activeBadge">0</span>
-    </button>
-    <button class="status-btn" data-status="sold" onclick="filterByStatus('sold')">
-      <i class="fas fa-tag"></i>
-      Sold
-      <span class="status-badge" id="soldBadge">0</span>
-    </button>
-  </div>
-  
-  <!-- Mobile Dropdown -->
-  <div class="mobile-filter-dropdown">
-    <select class="mobile-filter-select" id="mobileFilterSelect" onchange="filterByStatusMobile(this.value)">
-      <option value="all">📋 All Boats (<span id="allBadgeMobile"><%= boats.length %></span>)</option>
-      <option value="active">✅ Active (<span id="activeBadgeMobile">0</span>)</option>
-      <option value="sold">🏷️ Sold (<span id="soldBadgeMobile">0</span>)</option>
-    </select>
-  </div>
-</div>
+      <div class="filter-group">
+        <span class="filter-label">Filter:</span>
+        
+        <div class="status-filters">
+          <button class="status-btn active" data-status="all" onclick="filterByStatus('all')">
+            <i class="fas fa-list"></i>
+            All Boats
+            <span class="status-badge" id="allBadge"><%= boats.length %></span>
+          </button>
+          <button class="status-btn" data-status="active" onclick="filterByStatus('active')">
+            <i class="fas fa-check-circle"></i>
+            Active
+            <span class="status-badge" id="activeBadge">0</span>
+          </button>
+          <button class="status-btn" data-status="sold" onclick="filterByStatus('sold')">
+            <i class="fas fa-tag"></i>
+            Sold
+            <span class="status-badge" id="soldBadge">0</span>
+          </button>
+        </div>
+        
+        <div class="mobile-filter-dropdown">
+          <select class="mobile-filter-select" id="mobileFilterSelect" onchange="filterByStatusMobile(this.value)">
+            <option value="all">📋 All Boats (<%= boats.length %>)</option>
+            <option value="active">✅ Active (0)</option>
+            <option value="sold">🏷️ Sold (0)</option>
+          </select>
+        </div>
+      </div>
+      
       <div class="loading-spinner" id="loadingSpinner"></div>
     </div>
     
@@ -817,7 +897,6 @@ body {
   </div>
 </div>
 
-<!-- Main Content -->
 <div class="container">
   <div class="grid" id="boatsGrid">
     <% boats.forEach((boat, index) => { 
@@ -882,7 +961,6 @@ body {
   </div>
 </div>
 
-<!-- Modal -->
 <div class="modal" id="modal" onclick="handleModalClick(event)">
   <div class="modal-content" onclick="event.stopPropagation()">
     <div class="modal-header">
@@ -900,70 +978,96 @@ let boatsData = <%- JSON.stringify(boats) %>;
 let currentStatus = 'all';
 const SAMPLE_IMAGE = "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200";
 
-// Initialize badge counts on page load
-async function initializeBadgeCounts() {
-  try {
-    // Fetch active boats count
-    const activeResponse = await fetch('/api/boats/active');
-    const activeData = await activeResponse.json();
-    const activeBoats = activeData.boats || [];
-    document.getElementById('activeBadge').textContent = activeBoats.length;
+// ==================== HEIGHT COMMUNICATION ====================
+function sendHeightToParent() {
+  setTimeout(() => {
+    const grid = document.getElementById('boatsGrid');
+    const emptyState = document.getElementById('emptyState');
+    const searchSection = document.querySelector('.search-section');
     
-    // Fetch sold boats count
-    const soldResponse = await fetch('/api/boats/sold');
-    const soldData = await soldResponse.json();
-    const soldBoats = soldData.boats || [];
-    document.getElementById('soldBadge').textContent = soldBoats.length;
-  } catch (error) {
-    console.error('Error fetching badge counts:', error);
-  }
-}
-// Mobile filter function
-function filterByStatusMobile(status) {
-  filterByStatus(status);
+    let actualHeight = 0;
+    
+    if (grid && grid.style.display !== 'none') {
+      const gridRect = grid.getBoundingClientRect();
+      const gridBottom = gridRect.bottom + window.scrollY;
+      actualHeight = gridBottom + 80;
+    } else if (emptyState && emptyState.style.display === 'block') {
+      const emptyRect = emptyState.getBoundingClientRect();
+      const emptyBottom = emptyRect.bottom + window.scrollY;
+      actualHeight = emptyBottom + 80;
+    } else {
+      actualHeight = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight
+      );
+    }
+    
+    window.parent.postMessage({
+      type: 'boatIframeResize',
+      height: actualHeight
+    }, '*');
+  }, 150);
 }
 
-// Update mobile dropdown badges too in initializeBadgeCounts
+window.addEventListener('load', function() {
+  sendHeightToParent();
+  setTimeout(sendHeightToParent, 300);
+  setTimeout(sendHeightToParent, 600);
+  setTimeout(sendHeightToParent, 1000);
+});
+
+window.addEventListener('resize', sendHeightToParent);
+
+const observer = new MutationObserver(sendHeightToParent);
+observer.observe(document.body, {
+  childList: true,
+  subtree: true,
+  attributes: true,
+  attributeFilter: ['style']
+});
+
+// ==================== BADGE INITIALIZATION ====================
 async function initializeBadgeCounts() {
   try {
-    // Fetch active boats count
     const activeResponse = await fetch('/api/boats/active');
     const activeData = await activeResponse.json();
     const activeBoats = activeData.boats || [];
     const activeCount = activeBoats.length;
     document.getElementById('activeBadge').textContent = activeCount;
     
-    // Fetch sold boats count
     const soldResponse = await fetch('/api/boats/sold');
     const soldData = await soldResponse.json();
     const soldBoats = soldData.boats || [];
     const soldCount = soldBoats.length;
     document.getElementById('soldBadge').textContent = soldCount;
     
-    // Update mobile dropdown options
     updateMobileDropdown();
   } catch (error) {
     console.error('Error fetching badge counts:', error);
   }
 }
 
-// Update mobile dropdown with current counts
 function updateMobileDropdown() {
   const allCount = document.getElementById('allBadge').textContent;
   const activeCount = document.getElementById('activeBadge').textContent;
   const soldCount = document.getElementById('soldBadge').textContent;
   
   const select = document.getElementById('mobileFilterSelect');
-  select.options[0].text = `📋 All Boats (${allCount})`;
-  select.options[1].text = `✅ Active (${activeCount})`;
-  select.options[2].text = `🏷️ Sold (${soldCount})`;
+  if (select) {
+    select.options[0].text = `📋 All Boats (${allCount})`;
+    select.options[1].text = `✅ Active (${activeCount})`;
+    select.options[2].text = `🏷️ Sold (${soldCount})`;
+  }
 }
-// Call on page load
+
 initializeBadgeCounts();
 
+// ==================== SEARCH ====================
 document.getElementById('searchInput').addEventListener('input', function(e) {
   const searchTerm = e.target.value.toLowerCase();
   filterAndDisplayBoats(searchTerm);
+  setTimeout(sendHeightToParent, 200);
+  setTimeout(sendHeightToParent, 500);
 });
 
 function filterAndDisplayBoats(searchTerm = '') {
@@ -981,9 +1085,7 @@ function filterAndDisplayBoats(searchTerm = '') {
       : '';
     const year = (boat.ModelYear || '').toString();
     
-    const matches = title.includes(searchTerm) || 
-                   location.includes(searchTerm) || 
-                   year.includes(searchTerm);
+    const matches = title.includes(searchTerm) || location.includes(searchTerm) || year.includes(searchTerm);
     
     if (matches) {
       card.style.display = 'flex';
@@ -993,9 +1095,7 @@ function filterAndDisplayBoats(searchTerm = '') {
     }
   });
   
-  document.getElementById('resultsCount').textContent = 
-    `Showing ${visibleCount} of ${boatsData.length} boats`;
-  
+  document.getElementById('resultsCount').textContent = `Showing ${visibleCount} of ${boatsData.length} boats`;
   document.getElementById('displayCount').textContent = visibleCount;
   
   if (visibleCount === 0) {
@@ -1005,6 +1105,13 @@ function filterAndDisplayBoats(searchTerm = '') {
     grid.style.display = 'grid';
     emptyState.style.display = 'none';
   }
+  
+  setTimeout(sendHeightToParent, 100);
+}
+
+// ==================== FILTER ====================
+function filterByStatusMobile(status) {
+  filterByStatus(status);
 }
 
 async function filterByStatus(status) {
@@ -1015,6 +1122,11 @@ async function filterByStatus(status) {
   document.querySelectorAll('.status-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.status === status);
   });
+  
+  const mobileSelect = document.getElementById('mobileFilterSelect');
+  if (mobileSelect) {
+    mobileSelect.value = status;
+  }
   
   const spinner = document.getElementById('loadingSpinner');
   const grid = document.getElementById('boatsGrid');
@@ -1035,6 +1147,11 @@ async function filterByStatus(status) {
     const statusText = status === 'all' ? 'All Boats' : (status === 'active' ? 'Active' : 'Sold');
     document.getElementById('filterStatus').textContent = `Filter: ${statusText}`;
     
+    setTimeout(sendHeightToParent, 100);
+    setTimeout(sendHeightToParent, 300);
+    setTimeout(sendHeightToParent, 600);
+    setTimeout(sendHeightToParent, 1000);
+    
   } catch (error) {
     console.error('Error fetching boats:', error);
     alert('Failed to load boats. Please try again.');
@@ -1053,6 +1170,7 @@ function updateBoatsDisplay(status) {
     emptyState.style.display = 'block';
     document.getElementById('resultsCount').textContent = 'No boats found';
     document.getElementById('displayCount').textContent = '0';
+    setTimeout(sendHeightToParent, 200);
     return;
   }
   
@@ -1060,14 +1178,8 @@ function updateBoatsDisplay(status) {
   emptyState.style.display = 'none';
   
   grid.innerHTML = boatsData.map((boat, index) => {
-    const image = boat.Images && boat.Images.length 
-      ? boat.Images[0].Uri 
-      : SAMPLE_IMAGE;
-    
-    const location = boat.BoatLocation
-      ? `${boat.BoatLocation.BoatCityName}, ${boat.BoatLocation.BoatStateCode}`
-      : "Location Not Specified";
-    
+    const image = boat.Images && boat.Images.length ? boat.Images[0].Uri : SAMPLE_IMAGE;
+    const location = boat.BoatLocation ? `${boat.BoatLocation.BoatCityName}, ${boat.BoatLocation.BoatStateCode}` : "Location Not Specified";
     const title = `${boat.ModelYear || ''} ${boat.MakeString || ''} ${boat.Model || ''}`.trim() || 'Boat Details';
     
     let statusClass, statusText;
@@ -1088,38 +1200,17 @@ function updateBoatsDisplay(status) {
           <img src="${image}" alt="${title}" loading="lazy" />
           <span class="status-label ${statusClass}">${statusText}</span>
         </div>
-        
         <div class="card-body">
           <h3 class="card-title">${title}</h3>
           <div class="price">${boat.Price || "Price on Request"}</div>
-          
           <div class="specs">
-            <div class="spec-item">
-              <i class="fas fa-ruler-combined"></i>
-              <span>${boat.LengthOverall || boat.NominalLength || "N/A"}</span>
-            </div>
-            <div class="spec-item">
-              <i class="fas fa-calendar"></i>
-              <span>${boat.ModelYear || "N/A"}</span>
-            </div>
-            <div class="spec-item">
-              <i class="fas fa-tachometer-alt"></i>
-              <span>${boat.TotalEnginePowerQuantity || "N/A"}</span>
-            </div>
-            <div class="spec-item">
-              <i class="fas fa-gas-pump"></i>
-              <span>${boat.FuelType || "N/A"}</span>
-            </div>
+            <div class="spec-item"><i class="fas fa-ruler-combined"></i><span>${boat.LengthOverall || boat.NominalLength || "N/A"}</span></div>
+            <div class="spec-item"><i class="fas fa-calendar"></i><span>${boat.ModelYear || "N/A"}</span></div>
+            <div class="spec-item"><i class="fas fa-tachometer-alt"></i><span>${boat.TotalEnginePowerQuantity || "N/A"}</span></div>
+            <div class="spec-item"><i class="fas fa-gas-pump"></i><span>${boat.FuelType || "N/A"}</span></div>
           </div>
-          
-          <div class="location">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>${location}</span>
-          </div>
-          
-          <button class="btn-details" onclick="showDetails(${index})">
-            View Full Details
-          </button>
+          <div class="location"><i class="fas fa-map-marker-alt"></i><span>${location}</span></div>
+          <button class="btn-details" onclick="showDetails(${index})">View Full Details</button>
         </div>
       </div>
     `;
@@ -1127,6 +1218,9 @@ function updateBoatsDisplay(status) {
   
   document.getElementById('resultsCount').textContent = `Showing ${boatsData.length} boats`;
   document.getElementById('displayCount').textContent = boatsData.length;
+  
+  setTimeout(sendHeightToParent, 200);
+  setTimeout(sendHeightToParent, 500);
 }
 
 function updateCounts() {
@@ -1140,74 +1234,43 @@ function updateCounts() {
   } else {
     document.getElementById('soldBadge').textContent = count;
   }
+  
+  updateMobileDropdown();
 }
 
+// ==================== MODAL ====================
 function showDetails(index) {
   const boat = boatsData[index];
   const modal = document.getElementById("modal");
   const modalContent = document.getElementById("modalContent");
   const modalTitle = document.getElementById("modalTitle");
 
-  const images = boat.Images && boat.Images.length
-    ? boat.Images.map(img => img.Uri)
-    : [SAMPLE_IMAGE];
-
-  const location = boat.BoatLocation
-    ? `${boat.BoatLocation.BoatCityName}, ${boat.BoatLocation.BoatStateCode}`
-    : "Location Not Specified";
-
+  const images = boat.Images && boat.Images.length ? boat.Images.map(img => img.Uri) : [SAMPLE_IMAGE];
+  const location = boat.BoatLocation ? `${boat.BoatLocation.BoatCityName}, ${boat.BoatLocation.BoatStateCode}` : "Location Not Specified";
   const description = boat.PublicRemarks || "No description available for this boat.";
-  
   const title = `${boat.ModelYear || ''} ${boat.MakeString || ''} ${boat.Model || ''}`.trim() || 'Boat Details';
   
   modalTitle.textContent = title;
 
   modalContent.innerHTML = `
     <img id="mainImage" src="${images[0]}" class="detail-img" alt="${title}"/>
-
     <div class="thumb-gallery">
-      ${images.map((img, i) => `
-        <img src="${img}" 
-             class="thumb ${i === 0 ? 'active-thumb' : ''}" 
-             onclick="changeImage('${img}', this)"
-             alt="Thumbnail ${i + 1}">
-      `).join("")}
+      ${images.map((img, i) => `<img src="${img}" class="thumb ${i === 0 ? 'active-thumb' : ''}" onclick="changeImage('${img}', this)" alt="Thumbnail ${i + 1}">`).join("")}
     </div>
-
     <div class="detail-header">
       <div class="detail-info">
         <h2>${title}</h2>
         <div class="detail-price">${boat.Price || "Price on Request"}</div>
       </div>
     </div>
-
     <div class="detail-grid">
-      <div class="detail-item">
-        <span class="detail-label">Year</span>
-        <span class="detail-value">${boat.ModelYear || "N/A"}</span>
-      </div>
-      <div class="detail-item">
-        <span class="detail-label">Length</span>
-        <span class="detail-value">${boat.LengthOverall || boat.NominalLength || "N/A"}</span>
-      </div>
-      <div class="detail-item">
-        <span class="detail-label">Engine Power</span>
-        <span class="detail-value">${boat.TotalEnginePowerQuantity || "N/A"}</span>
-      </div>
-      <div class="detail-item">
-        <span class="detail-label">Fuel Type</span>
-        <span class="detail-value">${boat.FuelType || "N/A"}</span>
-      </div>
-      <div class="detail-item">
-        <span class="detail-label">Hull Material</span>
-        <span class="detail-value">${boat.HullMaterial || "N/A"}</span>
-      </div>
-      <div class="detail-item">
-        <span class="detail-label">Location</span>
-        <span class="detail-value">${location}</span>
-      </div>
+      <div class="detail-item"><span class="detail-label">Year</span><span class="detail-value">${boat.ModelYear || "N/A"}</span></div>
+      <div class="detail-item"><span class="detail-label">Length</span><span class="detail-value">${boat.LengthOverall || boat.NominalLength || "N/A"}</span></div>
+      <div class="detail-item"><span class="detail-label">Engine Power</span><span class="detail-value">${boat.TotalEnginePowerQuantity || "N/A"}</span></div>
+      <div class="detail-item"><span class="detail-label">Fuel Type</span><span class="detail-value">${boat.FuelType || "N/A"}</span></div>
+      <div class="detail-item"><span class="detail-label">Hull Material</span><span class="detail-value">${boat.HullMaterial || "N/A"}</span></div>
+      <div class="detail-item"><span class="detail-label">Location</span><span class="detail-value">${location}</span></div>
     </div>
-
     <div class="description-section">
       <h3><i class="fas fa-info-circle"></i> Description</h3>
       <p>${description}</p>
@@ -1216,6 +1279,7 @@ function showDetails(index) {
 
   modal.style.display = "flex";
   document.body.style.overflow = 'hidden';
+  setTimeout(sendHeightToParent, 200);
 }
 
 function changeImage(src, element) {
@@ -1227,6 +1291,7 @@ function changeImage(src, element) {
 function closeModal() {
   document.getElementById("modal").style.display = "none";
   document.body.style.overflow = 'auto';
+  setTimeout(sendHeightToParent, 200);
 }
 
 function handleModalClick(event) {
