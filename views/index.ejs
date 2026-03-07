@@ -110,6 +110,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
+
 /* Search & Filter Section - Dark Overlay Design */
 .search-section {
   background: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.65) 100%),
@@ -119,10 +120,8 @@ body {
   border-bottom: 2px solid rgba(255,255,255,0.1);
   position: relative;
   backdrop-filter: blur(10px);
-     padding-top: 250px;
 }
 
-/* Optional: Add texture overlay */
 .search-section::before {
   content: '';
   position: absolute;
@@ -365,17 +364,7 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .search-section {
-    padding: 30px 20px;
-  }
-  
-  .search-title {
-    font-size: 18px;
-  }
-}
-
+/* Main Content */
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -389,6 +378,7 @@ body {
   margin-top: 20px;
 }
 
+/* Boat Cards */
 .card {
   background: white;
   border-radius: 16px;
@@ -536,6 +526,7 @@ body {
   box-shadow: 0 6px 20px rgba(181,22,40,0.4);
 }
 
+/* Empty State */
 .empty-state {
   text-align: center;
   padding: 80px 20px;
@@ -554,6 +545,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -565,6 +557,7 @@ body {
   z-index: 1000;
   backdrop-filter: blur(4px);
   animation: fadeIn 0.3s;
+  overflow-y: auto;
 }
 
 @keyframes fadeIn {
@@ -582,6 +575,7 @@ body {
   overflow-y: auto;
   position: relative;
   animation: slideUp 0.3s;
+  margin: auto;
 }
 
 @keyframes slideUp {
@@ -750,6 +744,7 @@ body {
   font-size: 15px;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .header-stats {
     display: none;
@@ -768,7 +763,11 @@ body {
   }
   
   .search-section {
-    padding: 20px;
+    padding: 30px 20px;
+  }
+  
+  .search-title {
+    font-size: 18px;
   }
   
   .search-filters {
@@ -813,86 +812,14 @@ body {
     gap: 8px;
     align-items: flex-start;
   }
-}
-
-
-
-
-/* Modal improvements for mobile/tablet */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.75);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  z-index: 1000;
-  backdrop-filter: blur(4px);
-  animation: fadeIn 0.3s;
-  overflow-y: auto; /* Allow modal container to scroll */
-}
-
-.modal-content {
-  background: white;
-  max-width: 1100px;
-  width: 100%;
-  border-radius: 20px;
-  padding: 0;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-  animation: slideUp 0.3s;
-  margin: auto; /* Center vertically */
-}
-
-/* Mobile/Tablet specific */
-@media (max-width: 1024px) {
+  
   .modal {
     padding: 10px;
-    align-items: flex-start; /* Start from top on mobile */
-    padding-top: 20px;
-  }
-  
-  .modal-content {
-    max-height: 95vh;
-    margin-top: 0;
-  }
-  
-  .modal-header {
-    position: sticky;
-    top: 0;
-    background: white;
-    padding: 15px 20px;
-    border-bottom: 2px solid var(--secondary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-  }
-  
-  .modal-title {
-    font-size: 18px;
-  }
-  
-  .modal-body {
-    padding: 20px;
-  }
-  
-  .detail-img {
-    height: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .modal {
-    padding: 5px;
-    padding-top: 10px;
   }
   
   .modal-content {
     border-radius: 16px;
-    max-height: 98vh;
+    max-height: 85vh;
   }
   
   .modal-header {
@@ -903,8 +830,34 @@ body {
     font-size: 16px;
   }
   
+  .modal-body {
+    padding: 20px;
+  }
+  
   .detail-img {
     height: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    padding: 10px;
+  }
+  
+  .modal-content {
+    max-height: 90vh;
+  }
+  
+  .modal-header {
+    padding: 15px 20px;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+  }
+  
+  .detail-img {
+    height: 300px;
   }
 }
 </style>
