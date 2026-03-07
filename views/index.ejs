@@ -1373,20 +1373,18 @@ function showDetails(index) {
   modal.style.display = "flex";
   document.body.style.overflow = 'hidden';
   
-  // IMPORTANT: Scroll to top of modal on mobile/tablet
+  // Just scroll modal content to top, NOT the page
   setTimeout(() => {
     const modalContentEl = document.querySelector('.modal-content');
     if (modalContentEl) {
       modalContentEl.scrollTop = 0;
     }
-    // Also scroll page to top on mobile
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    // And scroll parent iframe if inside one
-    window.parent.postMessage({ type: 'scrollToTop' }, '*');
   }, 50);
   
   setTimeout(sendHeightToParent, 200);
 }
+
+
 function changeImage(src, element) {
   document.getElementById("mainImage").src = src;
   document.querySelectorAll(".thumb").forEach(t => t.classList.remove("active-thumb"));
