@@ -952,7 +952,6 @@ body {
     font-size:14px !important;
     padding:0 10px !important;
   }
-
 </style>
 </head>
 
@@ -1005,12 +1004,12 @@ body {
         <span class="filter-label">Filter:</span>
         
         <div class="status-filters">
-          <button class="status-btn active" data-status="all" onclick="filterByStatus('all')">
+          <button class="status-btn active" data-status="all" onclick="filterByStatus('all')" style="display: none;">
             <i class="fas fa-list"></i>
             All Boats
             <span class="status-badge" id="allBadge"><%= boats.length %></span>
           </button>
-          <button class="status-btn" data-status="active" onclick="filterByStatus('active')">
+          <button class="status-btn active" data-status="active" onclick="filterByStatus('active')">
             <i class="fas fa-check-circle"></i>
             Active
             <span class="status-badge" id="activeBadge">0</span>
@@ -1025,7 +1024,7 @@ body {
         <div class="mobile-filter-dropdown">
           <select class="mobile-filter-select" id="mobileFilterSelect" onchange="filterByStatusMobile(this.value)">
             <option value="all">📋 All Boats (<%= boats.length %>)</option>
-            <option value="active">✅ Active (0)</option>
+            <option value="active" selected>✅ Active (0)</option>
             <option value="sold">🏷️ Sold (0)</option>
           </select>
         </div>
@@ -1063,7 +1062,11 @@ body {
       
       <div class="card-body">
         <h3 class="card-title"><%= title %></h3>
-        <div class="price"><%= boat.Price || "Price on Request" %></div>
+        <div class="price">
+<%= boat.Price 
+  ? parseFloat(boat.Price).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " USD"
+  : "Price on Request" %>
+</div>
         
         <div class="specs">
           <div class="spec-item">
@@ -1119,7 +1122,7 @@ body {
 
 <script>
 let boatsData = <%- JSON.stringify(boats) %>;
-let currentStatus = 'all';
+let currentStatus = 'active';
 const SAMPLE_IMAGE = "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200";
 
 // ==================== HEIGHT COMMUNICATION ====================
@@ -1217,6 +1220,19 @@ function updateMobileDropdown() {
 }
 
 initializeBadgeCounts();
+
+// Auto-load active boats on page load
+(async () => {
+  try {
+    const response = await fetch('/api/boats/active');
+    const data = await response.json();
+    boatsData = data.boats || [];
+    updateBoatsDisplay('active');
+    document.getElementById('filterStatus').textContent = 'Filter: Active';
+  } catch (e) {
+    console.error('Failed to load active boats on init:', e);
+  }
+})();
 
 // ==================== SEARCH ====================
 document.getElementById('searchInput').addEventListener('input', function(e) {
@@ -1358,7 +1374,7 @@ function updateBoatsDisplay(status) {
         </div>
         <div class="card-body">
           <h3 class="card-title">${title}</h3>
-          <div class="price">${boat.Price || "Price on Request"}</div>
+          <div class="price">${boat.Price ? parseFloat(boat.Price).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' USD' : 'Price on Request'}</div>
           <div class="specs">
             <div class="spec-item"><i class="fas fa-ruler-combined"></i><span>${boat.LengthOverall || boat.NominalLength || "N/A"}</span></div>
             <div class="spec-item"><i class="fas fa-calendar"></i><span>${boat.ModelYear || "N/A"}</span></div>
@@ -1422,7 +1438,16 @@ function showDetails(index) {
     <div class="detail-header">
       <div class="detail-info">
         <h2>${title}</h2>
-        <div class="detail-price">${boat.Price || "Price on Request"}</div>
+        <div class="detail-price">
+${
+  boat.Price
+    ? parseFloat(boat.Price).toLocaleString('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      }) + " USD"
+    : "Price on Request"
+}
+</div>
       </div>
     </div>
 
