@@ -945,10 +945,10 @@ body {
   }
 }
 @media (max-width:768px){
-  .seo_tilte h1{
+  .seo_title h1{
     font-size:24px !important;
   }
-  .seo_tilte p{
+  .seo_title p{
     font-size:14px !important;
     padding:0 10px !important;
   }
@@ -978,10 +978,10 @@ body {
   </div>
 </div>
 <div class="search-section">
- <div class="seo_tilte" style="color:white; text-align:center; padding:40px 20px;">
-  <h1 style="color:white; margin-bottom:15px;">Explore Our Current Boat Listings</h1>
-  <p style="color:white; max-width:800px; margin:0 auto; line-height:1.6;">
-    At Big Mike Boats, we specialize in high-performance center console boats that are built to thrill. Whether you're a seasoned boater or just starting your journey, we’ve got a boat for every need and adventure. Take a look at our curated collection of available boats and find the perfect match for your lifestyle.
+ <div class="seo_title" style="color:white; text-align:center; padding:40px 20px;">
+  <h1 style="color:white; margin-bottom:15px;">Explore Our Current Boat Listings & Brokerage Inventory at Lake of the Ozarks</h1>
+  <p style="color:white; max-width:856px; margin:0 auto; line-height:1.6;">
+    At Big Mike Boats, we offer a wide selection of boat listings and brokerage boats at Lake of the Ozarks to fit every lifestyle on the water. From performance boats and cruisers to fishing boats, pontoons, and more, our inventory is designed to help buyers find the right boat for their needs. Whether you are a first-time buyer or a seasoned boater, explore our current boats for sale and discover trusted brokerage options at Lake of the Ozarks.
   </p>
 </div>
   <div class="search-container">
@@ -1064,7 +1064,7 @@ body {
         <h3 class="card-title"><%= title %></h3>
         <div class="price">
 <%= boat.Price 
-  ? parseFloat(boat.Price).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " USD"
+ ? "$" + parseFloat(boat.Price).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " USD"
   : "Price on Request" %>
 </div>
         
@@ -1297,6 +1297,21 @@ sendHeightToParent();
     const data = await response.json();
     
     boatsData = data.boats || [];
+
+    // Clear grid first and shrink iframe immediately
+    const grid = document.getElementById('boatsGrid');
+    grid.innerHTML = '';
+    grid.style.display = 'none';
+
+    // Send small height right away so iframe shrinks
+    window.parent.postMessage({
+      type: 'boatIframeResize',
+      height: document.querySelector('.search-section').offsetHeight + 100
+    }, '*');
+
+    // Small pause then render new cards
+    await new Promise(resolve => setTimeout(resolve, 100));
+
     updateBoatsDisplay(status);
     updateCounts();
     
@@ -1304,13 +1319,15 @@ sendHeightToParent();
     
     const statusText = status === 'all' ? 'All Boats' : (status === 'active' ? 'Active' : 'Sold');
     document.getElementById('filterStatus').textContent = `Filter: ${statusText}`;
-    
-    setTimeout(sendHeightToParent, 300);
+
+    setTimeout(sendHeightToParent, 200);
+    setTimeout(sendHeightToParent, 500);
+    setTimeout(sendHeightToParent, 900);
     
   } catch (error) {
     console.error('Error fetching boats:', error);
     alert('Failed to load boats. Please try again.');
-  } finally {
+  }finally {
     spinner.style.display = 'none';
     grid.style.opacity = '1';
   }
@@ -1357,7 +1374,7 @@ function updateBoatsDisplay(status) {
         </div>
         <div class="card-body">
           <h3 class="card-title">${title}</h3>
-          <div class="price">${boat.Price ? parseFloat(boat.Price).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' USD' : 'Price on Request'}</div>
+          <div class="price">${boat.Price ? "$" + parseFloat(boat.Price).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' USD' : 'Price on Request'}</div>
           <div class="specs">
             <div class="spec-item"><i class="fas fa-ruler-combined"></i><span>${boat.LengthOverall || boat.NominalLength || "N/A"}</span></div>
             <div class="spec-item"><i class="fas fa-calendar"></i><span>${boat.ModelYear || "N/A"}</span></div>
@@ -1424,11 +1441,11 @@ function showDetails(index) {
         <div class="detail-price">
 ${
   boat.Price
-    ? parseFloat(boat.Price).toLocaleString('en-US', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      }) + " USD"
-    : "Price on Request"
+  ? "$" + parseFloat(boat.Price).toLocaleString('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }) + " USD"
+  : "Price on Request"
 }
 </div>
       </div>
