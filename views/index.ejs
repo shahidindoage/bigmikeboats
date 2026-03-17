@@ -1126,8 +1126,10 @@ let currentStatus = 'active';
 const SAMPLE_IMAGE = "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200";
 
 // ==================== HEIGHT COMMUNICATION ====================
+let heightTimer = null;
 function sendHeightToParent() {
-  setTimeout(() => {
+  if (heightTimer) clearTimeout(heightTimer);
+  heightTimer = setTimeout(() => {
     document.body.style.height = 'auto';
     document.body.style.minHeight = 'unset';
     document.documentElement.style.height = 'auto';
@@ -1146,11 +1148,9 @@ function sendHeightToParent() {
       }
     });
 
-    const finalHeight = maxBottom + 60;
-
     window.parent.postMessage({
       type: 'boatIframeResize',
-      height: finalHeight
+      height: maxBottom + 60
     }, '*');
   }, 300);
 }
@@ -1161,12 +1161,14 @@ window.addEventListener('load', function() {
 
 window.addEventListener('resize', sendHeightToParent);
 
-const observer = new MutationObserver(sendHeightToParent);
+let observerTimer = null;
+const observer = new MutationObserver(() => {
+  if (observerTimer) clearTimeout(observerTimer);
+  observerTimer = setTimeout(sendHeightToParent, 400);
+});
 observer.observe(document.body, {
   childList: true,
-  subtree: true,
-  attributes: true,
-  attributeFilter: ['style']
+  subtree: true
 });
 
 // ==================== BADGE INITIALIZATION ====================
@@ -1354,17 +1356,17 @@ function updateBoatsDisplay(status) {
     const location = boat.BoatLocation ? `${boat.BoatLocation.BoatCityName}, ${boat.BoatLocation.BoatStateCode}` : "Location Not Specified";
     const title = `${boat.ModelYear || ''} ${boat.MakeString || ''} ${boat.Model || ''}`.trim() || 'Boat Details';
     
-    let statusClass, statusText;
-    if (status === 'all') {
-      statusClass = 'status-all';
-      statusText = 'Listed';
-    } else if (status === 'active') {
-      statusClass = 'status-active';
-      statusText = 'Available';
-    } else {
-      statusClass = 'status-sold';
-      statusText = 'Sold';
-    }
+let statusClass, statusText;
+if (status === 'all') {
+  statusClass = 'status-all';
+  statusText = 'Listed';
+} else if (status === 'active') {
+  statusClass = 'status-active';
+  statusText = 'Available';
+} else {
+  statusClass = 'status-sold';
+  statusText = 'Sold';
+}
     
     return `
       <div class="card" data-index="${index}">
@@ -1419,7 +1421,7 @@ function showDetails(index) {
 
   const images = boat.Images && boat.Images.length ? boat.Images.map(img => img.Uri) : [SAMPLE_IMAGE];
   const location = boat.BoatLocation ? `${boat.BoatLocation.BoatCityName}, ${boat.BoatLocation.BoatStateCode}` : "Location Not Specified";
-  const description = boat.PublicRemarks || "No description available for this boat.";
+  const description = boat.GeneralBoatDescription || "No description available for this boat.";
   const title = `${boat.ModelYear || ''} ${boat.MakeString || ''} ${boat.Model || ''}`.trim() || 'Boat Details';
 
   modalTitle.textContent = title;
@@ -1515,8 +1517,8 @@ function changeImage(src, element) {
 
 function closeModal() {
   document.getElementById("modal").style.display = "none";
-  // document.body.style.overflow = 'auto';
-  // setTimeout(sendHeightToParent, 200);
+  document.body.style.overflow = 'auto';
+  setTimeout(sendHeightToParent, 200);
 }
 
 function handleModalClick(event) {
