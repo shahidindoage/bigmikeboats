@@ -2,7 +2,8 @@ const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
 const dotenv = require("dotenv");
-// const path = require('path'); 
+const path = require("path"); 
+
 
 dotenv.config();
 
@@ -13,10 +14,24 @@ app.use(cors());
 app.use(express.json());
 // app.use(express.static(path.join(__dirname, 'public')));
 
+// --- Local APIs for testing ---
+app.get("/api/local/boats/all", (req, res) => {
+  res.sendFile(path.join(__dirname, "data", "all-boats.json"));
+});
+
+app.get("/api/local/boats/active", (req, res) => {
+  res.sendFile(path.join(__dirname, "data", "active-boats.json"));
+});
+
+app.get("/api/local/boats/sold", (req, res) => {
+  res.sendFile(path.join(__dirname, "data", "sold-boats.json"));
+});
+// ------------------------------
+
 // Main page - loads with all boats by default
 app.get("/", async (req, res) => {
   try {
-    const response = await fetch(process.env.BOAT_API_URL_ALL);
+    const response = await fetch("http://localhost:3000/api/local/boats/all");
     const data = await response.json();
     const boats = data.results || data;
     res.render("index", { boats });
@@ -29,7 +44,7 @@ app.get("/", async (req, res) => {
 // API endpoint for all boats
 app.get("/api/boats/all", async (req, res) => {
   try {
-    const response = await fetch(process.env.BOAT_API_URL_ALL);
+    const response = await fetch("http://localhost:3000/api/local/boats/all");
     const data = await response.json();
     const boats = data.results || data;
     res.json({ boats });
@@ -42,7 +57,7 @@ app.get("/api/boats/all", async (req, res) => {
 // API endpoint for active boats
 app.get("/api/boats/active", async (req, res) => {
   try {
-    const response = await fetch(process.env.BOAT_API_URL_ACTIVE);
+    const response = await fetch("http://localhost:3000/api/local/boats/active");
     const data = await response.json();
     const boats = data.results || data;
     res.json({ boats });
@@ -55,7 +70,7 @@ app.get("/api/boats/active", async (req, res) => {
 // API endpoint for sold boats
 app.get("/api/boats/sold", async (req, res) => {
   try {
-    const response = await fetch(process.env.BOAT_API_URL_SOLD);
+    const response = await fetch("http://localhost:3000/api/local/boats/sold");
     const data = await response.json();
     const boats = data.results || data;
     res.json({ boats });

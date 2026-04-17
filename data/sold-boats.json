@@ -1,0 +1,2731 @@
+{
+  "numResults": 8,
+  "results": [
+    {
+      "Source": "IMT",
+      "DocumentID": "10087775",
+      "SalesStatus": "Sold",
+      "CoOpIndicator": "true",
+      "NumberOfEngines": 2,
+      "RegistrationCountryCode": "1",
+      "Owner": {
+        "PartyId": "809039"
+      },
+      "SalesRep": {
+        "PartyId": "809053",
+        "Name": "Mike Oliver"
+      },
+      "CompanyName": "Big Mike Boats & Brokerage",
+      "Office": {
+        "PostalAddress": "33 Three Oaks Drive",
+        "City": "Sunrise Beach",
+        "State": "MO",
+        "PostCode": "65079",
+        "Country": "US",
+        "Email": "mike@bigmikeboats.com",
+        "Phone": "(602) 702-5678",
+        "Name": "Big Mike Boats & Brokerage"
+      },
+      "LastModificationDate": "2026-03-11",
+      "SoldDate": "2026-01-16T00:00:00Z",
+      "OptionActiveIndicator": true,
+      "ItemReceivedDate": "2026-02-19",
+      "OriginalPrice": "67900 USD",
+      "Price": "67900.00 USD",
+      "PriceHideInd": false,
+      "EmbeddedVideoPresent": false,
+      "Image360PhotoPresent": false,
+      "ImmersiveTourPresent": false,
+      "BoatLocation": {
+        "BoatCityName": "Osage Beach",
+        "BoatCountryID": "US",
+        "BoatStateCode": "MO"
+      },
+      "BoatCityNameNoCaseAlnumOnly": "Osage Beach",
+      "MakeString": "Baja",
+      "MakeStringExact": "Baja",
+      "MakeStringNoCaseAlnumOnly": "Baja",
+      "ModelYear": 2005,
+      "SaleClassCode": "Used",
+      "Model": "342",
+      "ModelExact": "342",
+      "ModelNoCaseAlnumOnly": "342",
+      "BoatCategoryCode": "Power",
+      "BoatName": "",
+      "BoatNameNoCaseAlnumOnly": "",
+      "BuilderName": "",
+      "DesignerName": "",
+      "CruisingSpeedMeasure": null,
+      "PropellerCruisingSpeed": "",
+      "MaximumSpeedMeasure": null,
+      "RangeMeasure": null,
+      "BridgeClearanceMeasure": null,
+      "BeamMeasure": "8.5 ft",
+      "FreeBoardMeasure": null,
+      "CabinHeadroomMeasure": null,
+      "FuelTankCountNumeric": 1,
+      "FuelTankCapacityMeasure": "185|gallon",
+      "FuelTankMaterialCode": "",
+      "DryWeightMeasure": "8,200 lb",
+      "BallastWeightMeasure": null,
+      "DisplacementMeasure": null,
+      "DisplacementTypeCode": "",
+      "TotalEnginePowerQuantity": "850 hp",
+      "DriveTypeCode": "Stern",
+      "BoatKeelCode": "",
+      "ConvertibleSaloonIndicator": false,
+      "WindlassTypeCode": "",
+      "DeadriseMeasure": "24 °",
+      "ElectricalCircuitMeasure": null,
+      "TrimTabsIndicator": false,
+      "HeadsCountNumeric": 1,
+      "BoatHullMaterialCode": "Fiberglass",
+      "BoatHullID": "AGC62011K405",
+      "StockNumber": "",
+      "NominalLength": "34 ft",
+      "LengthOverall": "34 ft",
+      "ListingTitle": "Priced to sell!",
+      "MaxDraft": "3.33 ft",
+      "TaxStatusCode": "",
+      "IMTTimeStamp": "2026-03-11T17:22:27Z",
+      "HasBoatHullID": true,
+      "IsAvailableForPls": false,
+      "NormNominalLength": 10.36,
+      "NormPrice": 67900,
+      "Engines": [
+        {
+          "Make": "MerCruiser",
+          "Model": "496 Magnum Bravo I",
+          "DriveTransmissionDescription": "Stern",
+          "Fuel": "unleaded",
+          "EnginePower": "425|horsepower",
+          "Type": "Inboard/Outboard",
+          "Year": 2005
+        },
+        {
+          "Make": "MerCruiser",
+          "Model": "496 Magnum Bravo I",
+          "Fuel": "unleaded",
+          "EnginePower": "425|horsepower",
+          "Type": "Inboard/Outboard",
+          "Year": 2005,
+          "Hours": 397
+        }
+      ],
+      "Service": [
+        "bw3.provisioning",
+        "mobile-phone-popup",
+        "btol.enhanced.all.listings",
+        "btol.advantagesort.advantage",
+        "boats.com.callrecording",
+        "btol.callrecording",
+        "boats.com.calltracking",
+        "btol.calltracking",
+        "import.yachtcloser",
+        "imt.beta",
+        "branding.imt.features.boats.display",
+        "imt.product.boat",
+        "imt.vbs.auto",
+        "lead.export.leadsmart",
+        "lead.export.dealer",
+        "imt.expiry",
+        "btol.callbuttonimtreporting",
+        "btol.inventorylistingpage",
+        "btol.dealergallary",
+        "btol.dealerreporting",
+        "btol",
+        "boats.com.service.level.premium",
+        "branding.imt.features.trailers.display",
+        "branding.imt.features.engines.display",
+        "account.type.dealer",
+        "soldboats",
+        "soldboats.contracted",
+        "imt.product.trailer",
+        "imt.product.engine",
+        "imt.vbs",
+        "boats.com.c2a.buy",
+        "boats.com.c2a.more",
+        "boats.com.c2a.brochure",
+        "boats.com.c2a.appointment",
+        "boats.com.c2a.tradein",
+        "boats.com",
+        "branding.imt.bw",
+        "export.btol",
+        "export.boats",
+        "imt.tracker.regular"
+      ],
+      "GeneralBoatDescription": [
+        "The Baja 342 features twin Mercury MerCruiser stern drives, full instrumentation with custom backlit gauges, Gaffrig performance controls, and a 145-gallon fuel tank. The large cockpit provides plenty of room to move around. With a large V-berth, two wraparound sofas, a full galley, and an enclosed head, the cabin feels like home."
+      ],
+      "BoatClassCode": [
+        "Cruisers",
+        "High Performance Boats",
+        "Cruisers"
+      ],
+      "BoatClassCodeNoCaseAlnumOnly": [
+        "Cruisers",
+        "High Performance Boats",
+        "Cruisers"
+      ],
+      "AdditionalDetailDescription": [
+        "\u003Cstrong\u003EAdditional Units Included\u003C/strong\u003E\u003Cbr\u003E\u003Cul\u003E \u003Cli\u003E2008 Performance Trailer Inc P34-124TRTB\u003C/li\u003E \u003C/ul\u003E",
+        "\u003Cstrong\u003EDisclaimer\u003C/strong\u003E\u003Cbr\u003EThe Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice."
+      ],
+      "Marketing": [
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "Priced to sell!",
+          "ProgramID": "TagLine",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "CUSTOM_CONTACT_SHOW_BROKER",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "YACHTCLOSER",
+          "OpportunityMethod": "",
+          "ProgramID": "remoteProductId",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "imt",
+          "MarketingID": "7925769"
+        }
+      ],
+      "TotalEngineHoursNumeric": 397
+    },
+    {
+      "Source": "IMT",
+      "DocumentID": "9921172",
+      "SalesStatus": "Sold",
+      "CoOpIndicator": "false",
+      "NumberOfEngines": 2,
+      "RegistrationCountryCode": "0",
+      "Owner": {
+        "PartyId": "809039"
+      },
+      "SalesRep": {
+        "PartyId": "809053",
+        "Name": "Mike Oliver"
+      },
+      "CompanyName": "Big Mike Boats & Brokerage",
+      "Office": {
+        "PostalAddress": "33 Three Oaks Drive",
+        "City": "Sunrise Beach",
+        "State": "MO",
+        "PostCode": "65079",
+        "Country": "US",
+        "Email": "mike@bigmikeboats.com",
+        "Phone": "(602) 702-5678",
+        "Name": "Big Mike Boats & Brokerage"
+      },
+      "LastModificationDate": "2026-01-22",
+      "SoldDate": "2026-01-22T00:00:00Z",
+      "OptionActiveIndicator": false,
+      "ItemReceivedDate": "2025-08-24",
+      "OriginalPrice": "319900 USD",
+      "Price": "319900.00 USD",
+      "PriceHideInd": false,
+      "EmbeddedVideoPresent": true,
+      "Image360PhotoPresent": false,
+      "ImmersiveTourPresent": false,
+      "BoatLocation": {
+        "BoatCityName": "Sunrise Beach",
+        "BoatCountryID": "US",
+        "BoatStateCode": "MO"
+      },
+      "BoatCityNameNoCaseAlnumOnly": "Sunrise Beach",
+      "MakeString": "Cobalt",
+      "MakeStringExact": "Cobalt",
+      "MakeStringNoCaseAlnumOnly": "Cobalt",
+      "ModelYear": 2022,
+      "SaleClassCode": "Used",
+      "Model": "R35",
+      "ModelExact": "R35",
+      "ModelNoCaseAlnumOnly": "R35",
+      "BoatCategoryCode": "Power",
+      "BoatName": "",
+      "BoatNameNoCaseAlnumOnly": "",
+      "BuilderName": "",
+      "DesignerName": "",
+      "CruisingSpeedMeasure": null,
+      "PropellerCruisingSpeed": "",
+      "MaximumSpeedMeasure": null,
+      "RangeMeasure": null,
+      "BridgeClearanceMeasure": null,
+      "BeamMeasure": "10.83 ft",
+      "FreeBoardMeasure": null,
+      "CabinHeadroomMeasure": null,
+      "WaterTankCountNumeric": 1,
+      "WaterTankCapacityMeasure": "25|gallon",
+      "WaterTankMaterialCode": "",
+      "FuelTankCountNumeric": 1,
+      "FuelTankCapacityMeasure": "165|gallon",
+      "FuelTankMaterialCode": "",
+      "HoldingTankCountNumeric": 1,
+      "HoldingTankCapacityMeasure": "10|gallon",
+      "HoldingTankMaterialCode": "",
+      "DryWeightMeasure": "13,400 lb",
+      "BallastWeightMeasure": null,
+      "DisplacementMeasure": null,
+      "DisplacementTypeCode": "",
+      "TotalEnginePowerQuantity": "760 hp",
+      "DriveTypeCode": "Stern",
+      "BoatKeelCode": "",
+      "ConvertibleSaloonIndicator": false,
+      "WindlassTypeCode": "Electric",
+      "DeadriseMeasure": "21 °",
+      "ElectricalCircuitMeasure": "110 V",
+      "TrimTabsIndicator": false,
+      "BoatHullMaterialCode": "Fiberglass",
+      "BoatHullID": "FGE35016L122",
+      "StockNumber": "",
+      "NominalLength": "35.33 ft",
+      "LengthOverall": "35.33 ft",
+      "ListingTitle": "Priced to sell!",
+      "TaxStatusCode": "",
+      "IMTTimeStamp": "2026-01-22T16:03:33Z",
+      "HasBoatHullID": true,
+      "IsAvailableForPls": false,
+      "NormNominalLength": 10.77,
+      "NormPrice": 319900,
+      "Engines": [
+        {
+          "Make": "Volvo",
+          "Model": "V8",
+          "DriveTransmissionDescription": "Stern",
+          "Fuel": "unleaded",
+          "EnginePower": "380|horsepower",
+          "Type": "Inboard/Outboard",
+          "PropellerType": "Stainless Steel",
+          "Year": 2022,
+          "Hours": 60
+        },
+        {
+          "Make": "Volvo",
+          "Model": "V8",
+          "DriveTransmissionDescription": "Stern",
+          "Fuel": "unleaded",
+          "EnginePower": "380|horsepower",
+          "Type": "Inboard/Outboard",
+          "PropellerType": "Stainless Steel",
+          "Year": 2022,
+          "Hours": 60
+        }
+      ],
+      "Service": [
+        "bw3.provisioning",
+        "mobile-phone-popup",
+        "btol.enhanced.all.listings",
+        "btol.advantagesort.advantage",
+        "boats.com.callrecording",
+        "btol.callrecording",
+        "boats.com.calltracking",
+        "btol.calltracking",
+        "import.yachtcloser",
+        "imt.beta",
+        "branding.imt.features.boats.display",
+        "imt.product.boat",
+        "imt.vbs.auto",
+        "lead.export.leadsmart",
+        "lead.export.dealer",
+        "imt.expiry",
+        "btol.callbuttonimtreporting",
+        "btol.inventorylistingpage",
+        "btol.dealergallary",
+        "btol.dealerreporting",
+        "btol",
+        "boats.com.service.level.premium",
+        "branding.imt.features.trailers.display",
+        "branding.imt.features.engines.display",
+        "account.type.dealer",
+        "soldboats",
+        "soldboats.contracted",
+        "imt.product.trailer",
+        "imt.product.engine",
+        "imt.vbs",
+        "boats.com.c2a.buy",
+        "boats.com.c2a.more",
+        "boats.com.c2a.brochure",
+        "boats.com.c2a.appointment",
+        "boats.com.c2a.tradein",
+        "boats.com",
+        "branding.imt.bw",
+        "export.btol",
+        "export.boats",
+        "imt.tracker.regular"
+      ],
+      "GeneralBoatDescription": [
+        "\u003Cp\u003EIntroducing the 2022 Cobalt R35, a stunning bowrider that combines elegance with performance. Measuring an impressive 35.3 feet in overall length, this vessel features a robust fiberglass hull with a deep Vee shape, ensuring a smooth and stable ride on the water. Powered by twin Volvo V8 engines, each delivering 380 horsepower, it promises exhilarating speed and agility, perfect for both leisurely cruising and thrilling adventures. Equipped with advanced joystick control, maneuvering this boat is effortless, enhancing your boating experience. The electric windlass adds convenience for anchoring, making your outings more enjoyable. With only 60 hours of use, this used model is in excellent condition, ready for new adventures. The Cobalt R35 is designed for those who appreciate quality craftsmanship and high performance, making it an exceptional choice for any boating enthusiast.\u003C/p\u003E"
+      ],
+      "Videos": {
+        "title": [
+          "",
+          ""
+        ],
+        "desc": [
+          "2022 Cobalt R35",
+          "2022 Cobalt R35"
+        ],
+        "thumbnailUrl": [
+          "https://img.youtube.com/vi/vPVXd0g6cFo/0.jpg",
+          "https://img.youtube.com/vi/vPVXd0g6cFo/0.jpg"
+        ],
+        "url": [
+          "https://youtu.be/vPVXd0g6cFo",
+          "https://youtu.be/vPVXd0g6cFo"
+        ]
+      },
+      "BoatClassCode": [
+        "Bowrider",
+        "Cruisers",
+        "Runabouts"
+      ],
+      "EmbeddedVideo": [
+        "https://youtu.be/vPVXd0g6cFo|",
+        "https://youtu.be/vPVXd0g6cFo|"
+      ],
+      "BoatClassCodeNoCaseAlnumOnly": [
+        "Bowrider",
+        "Cruisers",
+        "Runabouts"
+      ],
+      "AdditionalDetailDescription": [
+        "\u003Cstrong\u003ESteering System\u003C/strong\u003E\u003Cbr\u003EJoystick Control",
+        "\u003Cstrong\u003EDisclaimer\u003C/strong\u003E\u003Cbr\u003E\u003Cp\u003EThe Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice.\u003C/p\u003E"
+      ],
+      "Images": [
+        {
+          "Priority": "0",
+          "Caption": "2022 Cobalt R35 boat in blue, docked under a covered marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073540838-1.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "1",
+          "Caption": "2022 Cobalt R35 boat in dock, featuring sleek blue and white design.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073541667-2.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "2",
+          "Caption": "2022 Cobalt R35 boat in dock, featuring sleek blue and white design.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073542496-3.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "3",
+          "Caption": "2022 Cobalt R35 boat docked, featuring spacious deck and seating area.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073543274-4.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "4",
+          "Caption": "2022 Cobalt R35 boat swim platform with gray decking and stainless steel railing.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073547574-1.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "5",
+          "Caption": "2022 Cobalt R35 boat cockpit with modern dashboard and steering wheel.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073601365-2.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "6",
+          "Caption": "2022 Cobalt R35 boat interior with sleek helm, modern controls, and comfortable seating.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073555103-2.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "7",
+          "Caption": "2022 Cobalt R35 boat control panel with joystick and throttle levers.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250825102817726-1.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:43:48-08:00"
+        },
+        {
+          "Priority": "8",
+          "Caption": "2022 Cobalt R35 dashboard with dual Garmin displays and Volvo Penta branding.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073608877-2.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "9",
+          "Caption": "Dashboard of 2022 Cobalt R35 showing engine metrics and Garmin interface.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073610660-4.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "10",
+          "Caption": "2022 Cobalt R35 boat interior with gray seating and modern design.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073556013-3.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "11",
+          "Caption": "2022 Cobalt R35 boat interior with gray seating and built-in speakers.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073600430-1.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "12",
+          "Caption": "Luxurious interior of a 2022 Cobalt R35 boat with sleek seating and modern amenities.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073548500-2.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "13",
+          "Caption": "2022 Cobalt R35 boat interior with luxurious gray seating and sleek flooring.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073554106-1.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "14",
+          "Caption": "2022 Cobalt R35 boat interior with kitchenette, sink, and seating area.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073556910-4.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "15",
+          "Caption": "2022 Cobalt R35 boat interior with sleek gray seating and modern design.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073549373-3.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "16",
+          "Caption": "Luxurious interior of 2022 Cobalt R35 boat with gray seating and sleek design.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073550228-4.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:31:36-08:00"
+        },
+        {
+          "Priority": "17",
+          "Caption": "Luxurious interior of 2022 Cobalt R35 boat with plush seating and modern amenities.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073614881-2.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "18",
+          "Caption": "Luxurious interior of a 2022 Cobalt R35 boat with TV and comfortable seating.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073615574-3.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "19",
+          "Caption": "Control panel and speaker in 2022 Cobalt R35 interior.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073614166-1.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "20",
+          "Caption": "2022 Cobalt R35 boat interior bathroom with toilet and window view.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073616326-4.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "21",
+          "Caption": "Interior of 2022 Cobalt R35 boat with sink, controls, and window view.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073618934-1.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "22",
+          "Caption": "Engine compartment of a 2022 Cobalt R35 with dual Volvo Penta 380 V8 engines.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073602406-3.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "23",
+          "Caption": "Volvo Penta 380 V8 engine in 2022 Cobalt R35 boat, detailed view.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073603615-4.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "24",
+          "Caption": "Engine compartment of a 2022 Cobalt R35, featuring a Volvo Penta 380 V8 engine.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073607948-1.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "25",
+          "Caption": "Control panel of a 2022 Cobalt R35 boat with audio and ignition features.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073609821-3.jpg",
+          "LastModifiedDateTime": "2025-08-25T10:30:10-08:00"
+        },
+        {
+          "Priority": "26",
+          "Caption": "2022 Cobalt R35 boat interior with controls, speakers, and safety labels.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073619754-2.jpg",
+          "LastModifiedDateTime": "2025-08-24T07:51:21-08:00"
+        },
+        {
+          "Priority": "27",
+          "Caption": "Electrical panel and equipment inside a 2022 Cobalt R35 boat compartment.",
+          "Uri": "https://images.boatsgroup.com/images/1/11/72/2022-cobalt-r35-power-9921172-20250824073620413-3.jpg",
+          "LastModifiedDateTime": "2025-08-24T07:51:23-08:00"
+        }
+      ],
+      "Marketing": [
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "Priced to sell!",
+          "ProgramID": "TagLine",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "CUSTOM_CONTACT_SHOW_BROKER",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        }
+      ],
+      "TotalEngineHoursNumeric": 120
+    },
+    {
+      "Source": "IMT",
+      "DocumentID": "9907366",
+      "SalesStatus": "Sold",
+      "CoOpIndicator": "false",
+      "NumberOfEngines": 2,
+      "RegistrationCountryCode": "0",
+      "Owner": {
+        "PartyId": "809039"
+      },
+      "SalesRep": {
+        "PartyId": "809053",
+        "Name": "Mike Oliver"
+      },
+      "CompanyName": "Big Mike Boats & Brokerage",
+      "Office": {
+        "PostalAddress": "33 Three Oaks Drive",
+        "City": "Sunrise Beach",
+        "State": "MO",
+        "PostCode": "65079",
+        "Country": "US",
+        "Email": "mike@bigmikeboats.com",
+        "Phone": "(602) 702-5678",
+        "Name": "Big Mike Boats & Brokerage"
+      },
+      "LastModificationDate": "2026-02-27",
+      "SoldDate": "2025-12-05T00:00:00Z",
+      "OptionActiveIndicator": false,
+      "ItemReceivedDate": "2025-08-12",
+      "OriginalPrice": "124900 USD",
+      "Price": "124900.00 USD",
+      "PriceHideInd": false,
+      "EmbeddedVideoPresent": true,
+      "Image360PhotoPresent": false,
+      "ImmersiveTourPresent": false,
+      "BoatLocation": {
+        "BoatCityName": "Sunrise Beach",
+        "BoatCountryID": "US",
+        "BoatStateCode": "MO"
+      },
+      "BoatCityNameNoCaseAlnumOnly": "Sunrise Beach",
+      "MakeString": "Sea Ray",
+      "MakeStringExact": "Sea Ray",
+      "MakeStringNoCaseAlnumOnly": "Sea Ray",
+      "ModelYear": 2006,
+      "SaleClassCode": "Used",
+      "Model": "38 Sundancer",
+      "ModelExact": "38 Sundancer",
+      "ModelNoCaseAlnumOnly": "38 Sundancer",
+      "BoatCategoryCode": "Power",
+      "BoatName": "H2O SAVVY",
+      "BoatNameNoCaseAlnumOnly": "H2O SAVVY",
+      "BuilderName": "",
+      "DesignerName": "",
+      "CruisingSpeedMeasure": null,
+      "PropellerCruisingSpeed": "",
+      "MaximumSpeedMeasure": null,
+      "RangeMeasure": null,
+      "BridgeClearanceMeasure": null,
+      "BeamMeasure": "12.42 ft",
+      "FreeBoardMeasure": null,
+      "CabinHeadroomMeasure": null,
+      "WaterTankCountNumeric": 1,
+      "WaterTankCapacityMeasure": "55|gallon",
+      "WaterTankMaterialCode": "",
+      "FuelTankCountNumeric": 1,
+      "FuelTankCapacityMeasure": "250|gallon",
+      "FuelTankMaterialCode": "",
+      "HoldingTankCountNumeric": 1,
+      "HoldingTankCapacityMeasure": "35|gallon",
+      "HoldingTankMaterialCode": "",
+      "DryWeightMeasure": "19,000 lb",
+      "BallastWeightMeasure": null,
+      "DisplacementMeasure": null,
+      "DisplacementTypeCode": "",
+      "TotalEnginePowerQuantity": "740 hp",
+      "DriveTypeCode": "Direct",
+      "BoatKeelCode": "",
+      "ConvertibleSaloonIndicator": false,
+      "WindlassTypeCode": "Electric",
+      "DeadriseMeasure": null,
+      "ElectricalCircuitMeasure": null,
+      "TrimTabsIndicator": false,
+      "HeadsCountNumeric": 1,
+      "CabinsCountNumeric": 2,
+      "BoatHullMaterialCode": "Fiberglass",
+      "BoatHullID": "SERF1180E606",
+      "StockNumber": "",
+      "NominalLength": "39 ft",
+      "LengthOverall": "39 ft",
+      "ListingTitle": "Priced to sell!",
+      "DriveUp": "3.08 ft",
+      "TaxStatusCode": "",
+      "IMTTimeStamp": "2026-02-27T17:54:35Z",
+      "HasBoatHullID": true,
+      "IsAvailableForPls": false,
+      "NormNominalLength": 11.89,
+      "NormPrice": 124900,
+      "Engines": [
+        {
+          "Make": "Mercury",
+          "Model": "8.1L S",
+          "DriveTransmissionDescription": "Direct",
+          "Fuel": "unleaded",
+          "EnginePower": "370|horsepower",
+          "Type": "Inboard",
+          "Year": 2006,
+          "Hours": 830
+        },
+        {
+          "Make": "Mercury",
+          "Model": "8.1L S",
+          "DriveTransmissionDescription": "Direct",
+          "Fuel": "unleaded",
+          "EnginePower": "370|horsepower",
+          "Type": "Inboard",
+          "Year": 2006,
+          "Hours": 830
+        }
+      ],
+      "Service": [
+        "bw3.provisioning",
+        "mobile-phone-popup",
+        "btol.enhanced.all.listings",
+        "btol.advantagesort.advantage",
+        "boats.com.callrecording",
+        "btol.callrecording",
+        "boats.com.calltracking",
+        "btol.calltracking",
+        "import.yachtcloser",
+        "imt.beta",
+        "branding.imt.features.boats.display",
+        "imt.product.boat",
+        "imt.vbs.auto",
+        "lead.export.leadsmart",
+        "lead.export.dealer",
+        "imt.expiry",
+        "btol.callbuttonimtreporting",
+        "btol.inventorylistingpage",
+        "btol.dealergallary",
+        "btol.dealerreporting",
+        "btol",
+        "boats.com.service.level.premium",
+        "branding.imt.features.trailers.display",
+        "branding.imt.features.engines.display",
+        "account.type.dealer",
+        "soldboats",
+        "soldboats.contracted",
+        "imt.product.trailer",
+        "imt.product.engine",
+        "imt.vbs",
+        "boats.com.c2a.buy",
+        "boats.com.c2a.more",
+        "boats.com.c2a.brochure",
+        "boats.com.c2a.appointment",
+        "boats.com.c2a.tradein",
+        "boats.com",
+        "branding.imt.bw",
+        "export.btol",
+        "export.boats",
+        "imt.tracker.regular"
+      ],
+      "GeneralBoatDescription": [
+        "\u003Cp\u003E\u003Cstrong\u003E2006 Sea Ray Sundancer Twin Mercury 8.1L S\u003C/strong\u003E \u003C/p\u003E\u003Cp\u003EDirect drives, Bottom Paint & Buff And Wax 08/25\u003C/p\u003E\u003Cp\u003EMarine Mat Flooring in Cockpit Upgraded Waves & Wheels Stereo\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E\u003Cp\u003E\u003Cstrong\u003EInterior finishes:\u003C/strong\u003E Cherry cabinetry, earth-tone upholstery, home-style galley with full-size refrigerator, built-in entertainment, good headroom and natural light \u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EGalley & Living Spaces\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E\u003Cp\u003EEquipped with Corian countertops, under- and above-counter fridge/freezer, Kenyon two-burner cooktop, microwave, stainless sink, and drop-down TV with DVD capabilities\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EHelm & Electronics\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E\u003Cp\u003ERaised helm deck with double helm/companion seats\u003C/p\u003E\u003C/li\u003E \u003Cli\u003E\u003Cp\u003ECommon electronics include Garmin GPS/chartplotter, Mercury SmartCraft display,  trim tabs, spot light,\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003ECockpit & Deck\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E\u003Cp\u003EFiberglass hardtop, overhead lighting, stainless grab rails\u003C/p\u003E\u003C/li\u003E \u003Cli\u003E\u003Cp\u003ECenter transom door for easy swim platform access, wraparound seating, wet bar, icemaker, and sometimes a Corian tabletop\u003C/p\u003E\u003C/li\u003E\u003C/ul\u003E"
+      ],
+      "Videos": {
+        "title": [
+          "Sea Ray 380"
+        ],
+        "desc": [
+          "2006 38 Sea Ray"
+        ],
+        "thumbnailUrl": [
+          "https://images.boatsgroup.com/resize/1/73/66/9907366_20250812182701000.jpg"
+        ],
+        "url": [
+          "https://images.boats.com/videos/1/73/66/9907366_20250812182701000.mp4"
+        ]
+      },
+      "BoatClassCode": [
+        "Sports Cruiser",
+        "Cruisers",
+        "Cuddy Cabin"
+      ],
+      "EmbeddedVideo": [
+        "https://images.boats.com/videos/1/73/66/9907366_20250812182701000.mp4|Sea Ray 380"
+      ],
+      "BoatClassCodeNoCaseAlnumOnly": [
+        "Sports Cruiser",
+        "Cruisers",
+        "Cuddy Cabin"
+      ],
+      "AdditionalDetailDescription": [
+        "\u003Cstrong\u003EDisclaimer\u003C/strong\u003E\u003Cbr\u003E\u003Cp\u003EThe Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice.\u003C/p\u003E"
+      ],
+      "Images": [
+        {
+          "Priority": "0",
+          "Caption": "2006 Sea Ray 380 Sundancer yacht docked on calm water, side view.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812082033488-1.jpg",
+          "LastModifiedDateTime": "2025-08-12T10:45:07-08:00"
+        },
+        {
+          "Priority": "1",
+          "Caption": "2006 Sea Ray 380 Sundancer yacht docked in marina, sunny day.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812082034528-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T10:45:07-08:00"
+        },
+        {
+          "Priority": "2",
+          "Caption": "2006 Sea Ray 380 Sundancer yacht docked on a calm lake.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812105036335-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:05:46-08:00"
+        },
+        {
+          "Priority": "3",
+          "Caption": "2006 Sea Ray 380 Sundancer yacht docked on calm water.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812105036986-3.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:05:52-08:00"
+        },
+        {
+          "Priority": "4",
+          "Caption": "2006 Sea Ray 380 Sundancer boat docked at marina, rear view.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812082036015-4.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "5",
+          "Caption": "2006 Sea Ray 380 Sundancer cockpit with white seating and wooden steering wheel.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104908354-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:14-08:00"
+        },
+        {
+          "Priority": "6",
+          "Caption": "2006 Sea Ray 380 Sundancer helm with Garmin navigation and wood steering wheel.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104912070-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:17-08:00"
+        },
+        {
+          "Priority": "7",
+          "Caption": "2006 Sea Ray 380 Sundancer interior with plush seating and \"Lake Life\" decor.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812082038099-1.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "8",
+          "Caption": "Luxurious seating area on a 2006 Sea Ray 380 Sundancer yacht with \"Lake Life\" pillow.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104912687-3.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:17-08:00"
+        },
+        {
+          "Priority": "9",
+          "Caption": "2006 Sea Ray 380 Sundancer interior with plush seating and \"Lake Life\" pillow.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104913310-4.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:17-08:00"
+        },
+        {
+          "Priority": "10",
+          "Caption": "2006 Sea Ray 380 Sundancer interior with plush seating, docked under a covered marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104914854-1.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:24-08:00"
+        },
+        {
+          "Priority": "11",
+          "Caption": "Control panel of a 2006 Sea Ray 380 Sundancer with navigation display and gauges.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104313853-1.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "12",
+          "Caption": "Helm of 2006 Sea Ray 380 Sundancer with wooden steering wheel and control panel.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104322696-3.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "13",
+          "Caption": "Interior of 2006 Sea Ray 380 Sundancer yacht with kitchenette and seating area.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104315582-4.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "14",
+          "Caption": "Interior of 2006 Sea Ray 380 Sundancer yacht with kitchen, seating, and wooden finishes.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812082038371-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "15",
+          "Caption": "Luxurious interior of 2006 Sea Ray 380 Sundancer yacht with elegant seating and kitchen area.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104318670-4.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "16",
+          "Caption": "Interior of 2006 Sea Ray 380 Sundancer yacht kitchen with granite countertops and wooden cabinetry.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104320771-1.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "17",
+          "Caption": "Interior of 2006 Sea Ray 380 Sundancer with elegant seating and polished wood table.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104317128-1.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "18",
+          "Caption": "Luxurious cabin interior of 2006 Sea Ray 380 Sundancer with cozy bedding and decorative pillows.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812082039109-3.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "19",
+          "Caption": "Interior of 2006 Sea Ray 380 Sundancer with cozy seating and small TV.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104317634-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "20",
+          "Caption": "Bathroom interior of 2006 Sea Ray 380 Sundancer yacht with sink and porthole window.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104314707-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "21",
+          "Caption": "Compact bathroom in 2006 Sea Ray 380 Sundancer yacht with sink, toilet, and porthole window.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104315235-3.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "22",
+          "Caption": "2006 Sea Ray 380 Sundancer boat with mounted speakers in a marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104915390-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:20-08:00"
+        },
+        {
+          "Priority": "23",
+          "Caption": "Mini fridge on 2006 Sea Ray 380 Sundancer yacht, interior view.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104321716-2.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "24",
+          "Caption": "2006 Sea Ray 380 Sundancer yacht docked, showcasing sleek deck design and modern features.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104907697-1.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:11-08:00"
+        },
+        {
+          "Priority": "25",
+          "Caption": "Engine room of 2006 Sea Ray 380 Sundancer with twin Mercury engines.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812082039891-4.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:02:11-08:00"
+        },
+        {
+          "Priority": "26",
+          "Caption": "Engine room of 2006 Sea Ray 380 Sundancer with MerCruiser 8.1S Horizon engine components.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104911493-1.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:14-08:00"
+        },
+        {
+          "Priority": "27",
+          "Caption": "Engine compartment of a 2006 Sea Ray 380 Sundancer with visible wiring and components.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104909030-3.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:11-08:00"
+        },
+        {
+          "Priority": "28",
+          "Caption": "Digital display showing \"830.3\" on a 2006 Sea Ray 380 Sundancer generator panel.",
+          "Uri": "https://images.boatsgroup.com/images/1/73/66/2006-sea-ray-380-sundancer-power-9907366-20250812104909623-4.jpg",
+          "LastModifiedDateTime": "2025-08-12T11:04:14-08:00"
+        }
+      ],
+      "Marketing": [
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "Priced to sell!",
+          "ProgramID": "TagLine",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "CUSTOM_CONTACT_SHOW_BROKER",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "NAME_ACCESS",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        }
+      ],
+      "TotalEngineHoursNumeric": 1660
+    },
+    {
+      "Source": "IMT",
+      "DocumentID": "9932706",
+      "SalesStatus": "Sold",
+      "CoOpIndicator": "false",
+      "NumberOfEngines": 2,
+      "RegistrationCountryCode": "0",
+      "Owner": {
+        "PartyId": "809039"
+      },
+      "SalesRep": {
+        "PartyId": "809053",
+        "Name": "Mike Oliver"
+      },
+      "CompanyName": "Big Mike Boats & Brokerage",
+      "Office": {
+        "PostalAddress": "33 Three Oaks Drive",
+        "City": "Sunrise Beach",
+        "State": "MO",
+        "PostCode": "65079",
+        "Country": "US",
+        "Email": "mike@bigmikeboats.com",
+        "Phone": "(602) 702-5678",
+        "Name": "Big Mike Boats & Brokerage"
+      },
+      "LastModificationDate": "2026-02-27",
+      "SoldDate": "2025-12-05T00:00:00Z",
+      "OptionActiveIndicator": false,
+      "ItemReceivedDate": "2025-09-03",
+      "OriginalPrice": "79900 USD",
+      "Price": "79900.00 USD",
+      "PriceHideInd": false,
+      "EmbeddedVideoPresent": true,
+      "Image360PhotoPresent": false,
+      "ImmersiveTourPresent": false,
+      "BoatLocation": {
+        "BoatCityName": "Sunrise Beach",
+        "BoatCountryID": "US",
+        "BoatStateCode": "MO"
+      },
+      "BoatCityNameNoCaseAlnumOnly": "Sunrise Beach",
+      "MakeString": "Baja",
+      "MakeStringExact": "Baja",
+      "MakeStringNoCaseAlnumOnly": "Baja",
+      "ModelYear": 2005,
+      "SaleClassCode": "Used",
+      "Model": "SST 36 OUTLAW",
+      "ModelExact": "SST 36 OUTLAW",
+      "ModelNoCaseAlnumOnly": "SST 36 OUTLAW",
+      "BoatCategoryCode": "Power",
+      "BoatName": "",
+      "BoatNameNoCaseAlnumOnly": "",
+      "BuilderName": "",
+      "DesignerName": "",
+      "CruisingSpeedMeasure": null,
+      "PropellerCruisingSpeed": "",
+      "MaximumSpeedMeasure": null,
+      "RangeMeasure": null,
+      "BridgeClearanceMeasure": null,
+      "BeamMeasure": "8.5 ft",
+      "FreeBoardMeasure": null,
+      "CabinHeadroomMeasure": null,
+      "FuelTankCountNumeric": 1,
+      "FuelTankCapacityMeasure": "235|gallon",
+      "FuelTankMaterialCode": "",
+      "DryWeightMeasure": "8,300 lb",
+      "BallastWeightMeasure": null,
+      "DisplacementMeasure": null,
+      "DisplacementTypeCode": "",
+      "TotalEnginePowerQuantity": "850 hp",
+      "DriveTypeCode": "Stern",
+      "BoatKeelCode": "",
+      "ConvertibleSaloonIndicator": false,
+      "WindlassTypeCode": "",
+      "DeadriseMeasure": null,
+      "ElectricalCircuitMeasure": null,
+      "TrimTabsIndicator": false,
+      "BoatHullMaterialCode": "Fiberglass",
+      "BoatHullID": "AGC71013C505",
+      "StockNumber": "",
+      "NominalLength": "36 ft",
+      "LengthOverall": "36 ft",
+      "ListingTitle": "Price just reduced",
+      "TaxStatusCode": "",
+      "IMTTimeStamp": "2026-02-27T17:54:35Z",
+      "HasBoatHullID": true,
+      "IsAvailableForPls": false,
+      "NormNominalLength": 10.97,
+      "NormPrice": 79900,
+      "Engines": [
+        {
+          "Make": "Mercury",
+          "Model": "496 HO Mag",
+          "DriveTransmissionDescription": "Stern",
+          "Fuel": "unleaded",
+          "EnginePower": "425|horsepower",
+          "Type": "Inboard/Outboard",
+          "PropellerType": "Stainless Steel",
+          "Year": 2005,
+          "Hours": 526,
+          "BoatEngineLocationCode": "Port"
+        },
+        {
+          "Make": "Mercury",
+          "Model": "496 HO Mag",
+          "DriveTransmissionDescription": "Stern",
+          "Fuel": "unleaded",
+          "EnginePower": "425|horsepower",
+          "Type": "Inboard/Outboard",
+          "PropellerType": "Stainless Steel",
+          "Year": 2005,
+          "Hours": 528,
+          "BoatEngineLocationCode": "Starboard"
+        }
+      ],
+      "Service": [
+        "bw3.provisioning",
+        "mobile-phone-popup",
+        "btol.enhanced.all.listings",
+        "btol.advantagesort.advantage",
+        "boats.com.callrecording",
+        "btol.callrecording",
+        "boats.com.calltracking",
+        "btol.calltracking",
+        "import.yachtcloser",
+        "imt.beta",
+        "branding.imt.features.boats.display",
+        "imt.product.boat",
+        "imt.vbs.auto",
+        "lead.export.leadsmart",
+        "lead.export.dealer",
+        "imt.expiry",
+        "btol.callbuttonimtreporting",
+        "btol.inventorylistingpage",
+        "btol.dealergallary",
+        "btol.dealerreporting",
+        "btol",
+        "boats.com.service.level.premium",
+        "branding.imt.features.trailers.display",
+        "branding.imt.features.engines.display",
+        "account.type.dealer",
+        "soldboats",
+        "soldboats.contracted",
+        "imt.product.trailer",
+        "imt.product.engine",
+        "imt.vbs",
+        "boats.com.c2a.buy",
+        "boats.com.c2a.more",
+        "boats.com.c2a.brochure",
+        "boats.com.c2a.appointment",
+        "boats.com.c2a.tradein",
+        "boats.com",
+        "branding.imt.bw",
+        "export.btol",
+        "export.boats",
+        "imt.tracker.regular"
+      ],
+      "GeneralBoatDescription": [
+        "\u003Cp\u003EIntroducing the 2005 Baja SST 36 Outlaw, a remarkable high-performance boat that embodies speed and style. With an impressive overall length of 36 feet, this vessel is designed for thrilling adventures on the water. Its sleek fiberglass hull features a Deep Vee shape, ensuring exceptional handling and stability, making it perfect for both cruising and high-speed maneuvers. The Baja SST 36 Outlaw is a testament to quality craftsmanship, offering a robust and durable structure that enhances its performance. This used boat is not just about speed; it also provides a comfortable experience for its occupants. Whether you're racing across the waves or enjoying a leisurely day on the water, this boat promises to deliver an exhilarating ride. With its striking design and powerful capabilities, the Baja SST 36 Outlaw is an excellent choice for boating enthusiasts seeking excitement and reliability.\u003C/p\u003E"
+      ],
+      "Videos": {
+        "title": [
+          "2005 Baja"
+        ],
+        "desc": [
+          ""
+        ],
+        "thumbnailUrl": [
+          "https://images.boatsgroup.com/resize/1/27/6/9932706_20250903182628000.jpg"
+        ],
+        "url": [
+          "https://images.boats.com/videos/1/27/6/9932706_20250903182628000.mp4"
+        ]
+      },
+      "BoatClassCode": [
+        "High Performance Boats",
+        "Cuddy Cabin"
+      ],
+      "EmbeddedVideo": [
+        "https://images.boats.com/videos/1/27/6/9932706_20250903182628000.mp4|2005 Baja"
+      ],
+      "BoatClassCodeNoCaseAlnumOnly": [
+        "High Performance Boats",
+        "Cuddy Cabin"
+      ],
+      "AdditionalDetailDescription": [
+        "\u003Cstrong\u003EDisclaimer\u003C/strong\u003E\u003Cbr\u003E\u003Cp\u003EThe Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice.\u003C/p\u003E"
+      ],
+      "Images": [
+        {
+          "Priority": "0",
+          "Caption": "2005 Baja SST 36 OUTLAW speedboat docked under a covered marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110453627-1.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:19:56-08:00"
+        },
+        {
+          "Priority": "1",
+          "Caption": "2005 Baja SST 36 OUTLAW speedboat docked under a covered marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110454312-2.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:19:58-08:00"
+        },
+        {
+          "Priority": "2",
+          "Caption": "2005 Baja SST 36 OUTLAW speedboat docked under a covered marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110454914-3.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:01-08:00"
+        },
+        {
+          "Priority": "3",
+          "Caption": "2005 Baja SST 36 OUTLAW boat with green and white seating, docked by the water.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110502409-2.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:14-08:00"
+        },
+        {
+          "Priority": "4",
+          "Caption": "2005 Baja SST 36 OUTLAW speedboat with vibrant green accents docked under a canopy.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110457859-1.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:01-08:00"
+        },
+        {
+          "Priority": "5",
+          "Caption": "2005 Baja SST 36 OUTLAW speedboat docked by the water, featuring sleek design and vibrant colors.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110506529-3.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:18-08:00"
+        },
+        {
+          "Priority": "6",
+          "Caption": "2005 Baja SST 36 OUTLAW boat docked under a covered marina on a sunny day.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110505584-1.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:11-08:00"
+        },
+        {
+          "Priority": "7",
+          "Caption": "2005 Baja SST 36 OUTLAW boat cockpit with green-accented dashboard and steering wheel.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110506058-2.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:14-08:00"
+        },
+        {
+          "Priority": "8",
+          "Caption": "2005 Baja SST 36 OUTLAW boat cockpit with gauges and steering wheel.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110459142-3.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:09-08:00"
+        },
+        {
+          "Priority": "9",
+          "Caption": "2005 Baja SST 36 OUTLAW boat dashboard with green panel and multiple gauges.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110508285-1.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:21-08:00"
+        },
+        {
+          "Priority": "10",
+          "Caption": "2005 Baja SST 36 OUTLAW boat interior with white seating and wood flooring.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110458592-2.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:10-08:00"
+        },
+        {
+          "Priority": "11",
+          "Caption": "Interior of 2005 Baja SST 36 OUTLAW boat with white leather seating and sleek design.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110506976-4.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:21-08:00"
+        },
+        {
+          "Priority": "12",
+          "Caption": "2005 Baja SST 36 OUTLAW boat interior with white seating and sleek design.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110459801-4.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:05-08:00"
+        },
+        {
+          "Priority": "13",
+          "Caption": "2005 Baja SST 36 OUTLAW boat interior with audio system and speakers.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110501553-1.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:07-08:00"
+        },
+        {
+          "Priority": "14",
+          "Caption": "Interior of 2005 Baja SST 36 OUTLAW boat with seating and storage.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110503107-3.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:13-08:00"
+        },
+        {
+          "Priority": "15",
+          "Caption": "Compact bathroom in 2005 Baja SST 36 OUTLAW boat with portable toilet and storage.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110503892-4.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:17-08:00"
+        },
+        {
+          "Priority": "16",
+          "Caption": "Engine compartment of a 2005 Baja SST 36 OUTLAW boat, featuring dual 496 MAG HO engines.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110509210-3.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:18-08:00"
+        },
+        {
+          "Priority": "17",
+          "Caption": "2005 Baja SST 36 OUTLAW boat with MerCruiser engines on a dock.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110455697-4.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:10-08:00"
+        },
+        {
+          "Priority": "18",
+          "Caption": "Hour meter reading 526.8 hours on 2005 Baja SST 36 OUTLAW boat.",
+          "Uri": "https://images.boatsgroup.com/images/1/27/6/2005-baja-sst-36-outlaw-power-9932706-20250903110508796-2.jpg",
+          "LastModifiedDateTime": "2025-09-03T11:20:12-08:00"
+        }
+      ],
+      "Marketing": [
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "Price just reduced",
+          "ProgramID": "TagLine",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "CUSTOM_CONTACT_SHOW_BROKER",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        }
+      ],
+      "TotalEngineHoursNumeric": 1054
+    },
+    {
+      "Source": "IMT",
+      "DocumentID": "9999994",
+      "SalesStatus": "Sold",
+      "CoOpIndicator": "false",
+      "NumberOfEngines": 2,
+      "RegistrationCountryCode": "0",
+      "Owner": {
+        "PartyId": "809039"
+      },
+      "SalesRep": {
+        "PartyId": "809053",
+        "Name": "Mike Oliver"
+      },
+      "CompanyName": "Big Mike Boats & Brokerage",
+      "Office": {
+        "PostalAddress": "33 Three Oaks Drive",
+        "City": "Sunrise Beach",
+        "State": "MO",
+        "PostCode": "65079",
+        "Country": "US",
+        "Email": "mike@bigmikeboats.com",
+        "Phone": "(602) 702-5678",
+        "Name": "Big Mike Boats & Brokerage"
+      },
+      "LastModificationDate": "2026-01-22",
+      "SoldDate": "2026-01-22T00:00:00Z",
+      "OptionActiveIndicator": false,
+      "ItemReceivedDate": "2025-11-03",
+      "OriginalPrice": "67900 USD",
+      "Price": "67900.00 USD",
+      "PriceHideInd": false,
+      "EmbeddedVideoPresent": true,
+      "Image360PhotoPresent": false,
+      "ImmersiveTourPresent": false,
+      "BoatLocation": {
+        "BoatCityName": "Sunrise Beach",
+        "BoatCountryID": "US",
+        "BoatStateCode": "MO"
+      },
+      "BoatCityNameNoCaseAlnumOnly": "Sunrise Beach",
+      "MakeString": "Baja",
+      "MakeStringExact": "Baja",
+      "MakeStringNoCaseAlnumOnly": "Baja",
+      "ModelYear": 2005,
+      "SaleClassCode": "Used",
+      "Model": "342",
+      "ModelExact": "342",
+      "ModelNoCaseAlnumOnly": "342",
+      "BoatCategoryCode": "Power",
+      "BoatName": "",
+      "BoatNameNoCaseAlnumOnly": "",
+      "BuilderName": "",
+      "DesignerName": "",
+      "CruisingSpeedMeasure": null,
+      "PropellerCruisingSpeed": "",
+      "MaximumSpeedMeasure": null,
+      "RangeMeasure": null,
+      "BridgeClearanceMeasure": null,
+      "BeamMeasure": "8.5 ft",
+      "FreeBoardMeasure": null,
+      "CabinHeadroomMeasure": "4.5 ft",
+      "FuelTankCountNumeric": 1,
+      "FuelTankCapacityMeasure": "185|gallon",
+      "FuelTankMaterialCode": "",
+      "DryWeightMeasure": "8,200 lb",
+      "BallastWeightMeasure": null,
+      "DisplacementMeasure": null,
+      "DisplacementTypeCode": "",
+      "TotalEnginePowerQuantity": "850 hp",
+      "DriveTypeCode": "Stern",
+      "BoatKeelCode": "",
+      "ConvertibleSaloonIndicator": false,
+      "WindlassTypeCode": "",
+      "DeadriseMeasure": "24 °",
+      "ElectricalCircuitMeasure": null,
+      "TrimTabsIndicator": false,
+      "HeadsCountNumeric": 1,
+      "BoatHullMaterialCode": "Fiberglass",
+      "BoatHullID": "AGC62011K405",
+      "StockNumber": "",
+      "NominalLength": "34.17 ft",
+      "LengthOverall": "34.17 ft",
+      "ListingTitle": "Priced to sell!",
+      "MaxDraft": "3.33 ft",
+      "TaxStatusCode": "",
+      "IMTTimeStamp": "2026-01-22T16:04:16Z",
+      "HasBoatHullID": true,
+      "IsAvailableForPls": false,
+      "NormNominalLength": 10.42,
+      "NormPrice": 67900,
+      "Engines": [
+        {
+          "Make": "MerCruiser",
+          "Model": "496 Magnum Bravo I",
+          "DriveTransmissionDescription": "Stern",
+          "Fuel": "unleaded",
+          "EnginePower": "425|horsepower",
+          "Type": "Inboard/Outboard",
+          "PropellerType": "4 Blade, Stainless Steel",
+          "Year": 2005,
+          "Hours": 392,
+          "BoatEngineLocationCode": "Port"
+        },
+        {
+          "Make": "MerCruiser",
+          "Model": "496 Magnum Bravo I",
+          "DriveTransmissionDescription": "Stern",
+          "Fuel": "unleaded",
+          "EnginePower": "425|horsepower",
+          "Type": "Inboard/Outboard",
+          "PropellerType": "4 Blade, Stainless Steel",
+          "Year": 2005,
+          "Hours": 397,
+          "BoatEngineLocationCode": "Starboard"
+        }
+      ],
+      "Service": [
+        "bw3.provisioning",
+        "mobile-phone-popup",
+        "btol.enhanced.all.listings",
+        "btol.advantagesort.advantage",
+        "boats.com.callrecording",
+        "btol.callrecording",
+        "boats.com.calltracking",
+        "btol.calltracking",
+        "import.yachtcloser",
+        "imt.beta",
+        "branding.imt.features.boats.display",
+        "imt.product.boat",
+        "imt.vbs.auto",
+        "lead.export.leadsmart",
+        "lead.export.dealer",
+        "imt.expiry",
+        "btol.callbuttonimtreporting",
+        "btol.inventorylistingpage",
+        "btol.dealergallary",
+        "btol.dealerreporting",
+        "btol",
+        "boats.com.service.level.premium",
+        "branding.imt.features.trailers.display",
+        "branding.imt.features.engines.display",
+        "account.type.dealer",
+        "soldboats",
+        "soldboats.contracted",
+        "imt.product.trailer",
+        "imt.product.engine",
+        "imt.vbs",
+        "boats.com.c2a.buy",
+        "boats.com.c2a.more",
+        "boats.com.c2a.brochure",
+        "boats.com.c2a.appointment",
+        "boats.com.c2a.tradein",
+        "boats.com",
+        "branding.imt.bw",
+        "export.btol",
+        "export.boats",
+        "imt.tracker.regular"
+      ],
+      "GeneralBoatDescription": [
+        "\u003Cp\u003EStunning 2005 Baja 342, a remarkable high-performance boat that combines power and elegance. With an overall length of 34.17 feet, this vessel is designed for thrilling adventures on the water. The deep Vee hull, crafted from durable fiberglass, ensures a smooth and stable ride, making it perfect for both leisure cruising and high-speed outings. Powered by twin MerCruiser 496 Magnum Bravo I engines, each delivering an impressive 425 horsepower, this boat promises exhilarating performance. With only 392 and 397 hours of use, these engines are ready to take you on your next journey. Accommodating up to 8 passengers, the Baja 342 is ideal for entertaining friends and family. The well-appointed head adds convenience for longer trips. Experience the perfect blend of speed, comfort, and style with this exceptional vessel, ready to make waves on your next adventure. Performance Triple Axle Trailer\u003C/p\u003E"
+      ],
+      "Videos": {
+        "title": [
+          "Baja 342"
+        ],
+        "desc": [
+          "Lift Move"
+        ],
+        "thumbnailUrl": [
+          "https://images.boatsgroup.com/resize/1/99/94/9999994_20251103215637000.jpg"
+        ],
+        "url": [
+          "https://images.boats.com/videos/1/99/94/9999994_20251103215637000.mp4"
+        ]
+      },
+      "BoatClassCode": [
+        "High Performance Boats",
+        "Sports Cruiser",
+        "Cruisers"
+      ],
+      "EmbeddedVideo": [
+        "https://images.boats.com/videos/1/99/94/9999994_20251103215637000.mp4|Baja 342"
+      ],
+      "BoatClassCodeNoCaseAlnumOnly": [
+        "High Performance Boats",
+        "Sports Cruiser",
+        "Cruisers"
+      ],
+      "AdditionalDetailDescription": [
+        "\u003Cstrong\u003EDisclaimer\u003C/strong\u003E\u003Cbr\u003E\u003Cp\u003EThe Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice.\u003C/p\u003E"
+      ],
+      "Images": [
+        {
+          "Priority": "0",
+          "Caption": "2005 Baja 342 speedboat with vibrant graphics docked in a marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132828243-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:43:36-08:00"
+        },
+        {
+          "Priority": "1",
+          "Caption": "2005 Baja 342 speedboat docked in a covered marina, featuring sleek design and vibrant stripes.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103133054067-4.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:46:34-08:00"
+        },
+        {
+          "Priority": "2",
+          "Caption": "2005 Baja 342 speedboat docked in a marina, featuring sleek white design with red and yellow stripes.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103133049695-4.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:46:54-08:00"
+        },
+        {
+          "Priority": "3",
+          "Caption": "2005 Baja 342 speedboat docked, featuring colorful deck design and comfortable seating.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103133052433-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:46:38-08:00"
+        },
+        {
+          "Priority": "4",
+          "Caption": "2005 Baja 342 speedboat with vibrant graphics docked at a marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103133048855-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:46:38-08:00"
+        },
+        {
+          "Priority": "5",
+          "Caption": "2005 Baja 342 speedboat with colorful graphics on a lift at a marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132829054-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:43:41-08:00"
+        },
+        {
+          "Priority": "6",
+          "Caption": "2005 Baja 342 boat interior with white seating and dashboard, docked by the water.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132823806-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:43:29-08:00"
+        },
+        {
+          "Priority": "7",
+          "Caption": "2005 Baja 342 boat with white interior and seating, docked on a wooden platform.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103135211227-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T14:07:33-08:00"
+        },
+        {
+          "Priority": "8",
+          "Caption": "2005 Baja 342 boat docked, top view showing sleek design and water reflection.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103135210402-1.jpg",
+          "LastModifiedDateTime": "2025-11-03T14:08:12-08:00"
+        },
+        {
+          "Priority": "9",
+          "Caption": "Cockpit of 2005 Baja 342 boat with steering wheel and control panel.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132808091-1.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "10",
+          "Caption": "2005 Baja 342 boat cockpit with white leather seating and control panel.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132809929-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "11",
+          "Caption": "Dashboard of a 2005 Baja 342 boat with multiple gauges and controls.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132805270-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "12",
+          "Caption": "Control panel of a 2005 Baja 342 boat with throttle levers and switches.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132806231-4.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "13",
+          "Caption": "Interior of a 2005 Baja 342 boat with white seating and cabin entrance.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132809012-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "14",
+          "Caption": "2005 Baja 342 boat interior with white leather seating and control panel.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132810883-4.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "15",
+          "Caption": "Interior of a 2005 Baja 342 boat with white seating and colorful accents.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132813297-1.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "16",
+          "Caption": "White boat seat with colorful abstract design, Baja 342, 2005 model.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132824636-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "17",
+          "Caption": "Interior of a 2005 Baja 342 boat with speakers and cup holders.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132814148-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "18",
+          "Caption": "Interior of a 2005 Baja 342 boat with speakers and cup holders.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132815033-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "19",
+          "Caption": "Luxurious interior of a 2005 Baja 342 boat with seating, kitchenette, and modern amenities.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132803198-1.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "20",
+          "Caption": "Interior storage of 2005 Baja 342 boat with red bags and a plastic container.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132755509-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "21",
+          "Caption": "Interior of a 2005 Baja 342 boat featuring a kitchenette with sink, microwave, and seating.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132758603-1.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "22",
+          "Caption": "2005 Baja 342 boat interior with gray seating, microwave, and skylight.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132757032-4.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "23",
+          "Caption": "Interior of a 2005 Baja 342 boat with plush seating and a skylight.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132756360-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "24",
+          "Caption": "Compact bathroom in 2005 Baja 342 boat with toilet and sink.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132801417-4.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "25",
+          "Caption": "Compact refrigerator in 2005 Baja 342 boat interior, featuring gray paneling and carpeted flooring.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132759498-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "26",
+          "Caption": "Electrical control panel of a 2005 Baja 342 boat with AC and DC switches.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132800480-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "27",
+          "Caption": "Boat stereo system in a 2005 Baja 342, displaying Bluetooth loading screen.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132804067-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "28",
+          "Caption": "Side view of a 2005 Baja 342 boat with colorful graphics and fuel caps.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132831776-1.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "29",
+          "Caption": "2005 Baja 342 boat engine compartment with twin Mercury 496 MAG HO engines.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132816225-4.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "30",
+          "Caption": "Hour meter reading 391.7 on a 2005 Baja 342 boat.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132819943-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "31",
+          "Caption": "Hour meter reading 396.7 on 2005 Baja 342 boat.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132819280-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "32",
+          "Caption": "Close-up of 2005 Baja 342 engine components with clamps and hoses.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132820762-4.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "33",
+          "Caption": "2005 Baja 342 boat with dual Mercury MerCruiser outdrives at dock.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132751998-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "34",
+          "Caption": "2005 Baja 342 boat with dual MerCruiser Bravo X outdrives in water.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132750990-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "35",
+          "Caption": "2005 Baja 342 boat with red cover on a lift, featuring colorful graphics.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132749875-1.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "36",
+          "Caption": "2005 Baja 342 speedboat with red cover on lift, vibrant graphics, docked in marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103135212142-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T14:07:42-08:00"
+        },
+        {
+          "Priority": "37",
+          "Caption": "2005 Baja 342 boat battery compartment with cables and equipment.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132822931-1.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "38",
+          "Caption": "Red boat trailer on gravel, near a parked RV, labeled \"Performance.\"",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132837309-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "39",
+          "Caption": "Red boat trailer for 2005 Baja 342 on gravel, with black supports.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103132838209-3.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        },
+        {
+          "Priority": "40",
+          "Caption": "Red triple-axle trailer for 2005 Baja 342 boat on gravel surface.",
+          "Uri": "https://images.boatsgroup.com/images/1/99/94/2005-baja-342-power-9999994-20251103133048017-2.jpg",
+          "LastModifiedDateTime": "2025-11-03T13:53:52-08:00"
+        }
+      ],
+      "Marketing": [
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "Priced to sell!",
+          "ProgramID": "TagLine",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "CUSTOM_CONTACT_SHOW_BROKER",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        }
+      ],
+      "TotalEngineHoursNumeric": 789
+    },
+    {
+      "Source": "IMT",
+      "DocumentID": "10078259",
+      "SalesStatus": "Sold",
+      "CoOpIndicator": "false",
+      "NumberOfEngines": 1,
+      "RegistrationCountryCode": "0",
+      "Owner": {
+        "PartyId": "809039"
+      },
+      "SalesRep": {
+        "PartyId": "809053",
+        "Name": "Mike Oliver"
+      },
+      "CompanyName": "Big Mike Boats & Brokerage",
+      "Office": {
+        "PostalAddress": "33 Three Oaks Drive",
+        "City": "Sunrise Beach",
+        "State": "MO",
+        "PostCode": "65079",
+        "Country": "US",
+        "Email": "mike@bigmikeboats.com",
+        "Phone": "(602) 702-5678",
+        "Name": "Big Mike Boats & Brokerage"
+      },
+      "LastModificationDate": "2026-03-04",
+      "SoldDate": "2026-03-04T00:00:00Z",
+      "OptionActiveIndicator": false,
+      "ItemReceivedDate": "2026-02-09",
+      "OriginalPrice": "34900 USD",
+      "Price": "34900.00 USD",
+      "PriceHideInd": false,
+      "EmbeddedVideoPresent": true,
+      "Image360PhotoPresent": false,
+      "ImmersiveTourPresent": false,
+      "BoatLocation": {
+        "BoatCityName": "Sunrise Beach",
+        "BoatCountryID": "US",
+        "BoatStateCode": "MO"
+      },
+      "BoatCityNameNoCaseAlnumOnly": "Sunrise Beach",
+      "MakeString": "Crest",
+      "MakeStringExact": "Crest",
+      "MakeStringNoCaseAlnumOnly": "Crest",
+      "ModelYear": 2011,
+      "SaleClassCode": "Used",
+      "Model": "250 SLR Carribbean",
+      "ModelExact": "250 SLR Carribbean",
+      "ModelNoCaseAlnumOnly": "250 SLR Carribbean",
+      "BoatCategoryCode": "Power",
+      "BoatName": "",
+      "BoatNameNoCaseAlnumOnly": "",
+      "BuilderName": "",
+      "DesignerName": "",
+      "CruisingSpeedMeasure": null,
+      "PropellerCruisingSpeed": "",
+      "MaximumSpeedMeasure": null,
+      "RangeMeasure": null,
+      "BridgeClearanceMeasure": null,
+      "BeamMeasure": "8.5 ft",
+      "FreeBoardMeasure": null,
+      "CabinHeadroomMeasure": null,
+      "FuelTankCountNumeric": 1,
+      "FuelTankCapacityMeasure": "42|gallon",
+      "FuelTankMaterialCode": "",
+      "DryWeightMeasure": null,
+      "BallastWeightMeasure": null,
+      "DisplacementMeasure": null,
+      "DisplacementTypeCode": "",
+      "TotalEnginePowerQuantity": "225 hp",
+      "DriveTypeCode": "Other",
+      "BoatKeelCode": "",
+      "MaximumNumberOfPassengersNumeric": 18,
+      "ConvertibleSaloonIndicator": false,
+      "WindlassTypeCode": "",
+      "DeadriseMeasure": null,
+      "ElectricalCircuitMeasure": null,
+      "TrimTabsIndicator": false,
+      "BoatHullMaterialCode": "Aluminum",
+      "BoatHullID": "CSM01411D111",
+      "StockNumber": "",
+      "NominalLength": "25.83 ft",
+      "LengthOverall": "25.83 ft",
+      "ListingTitle": "Priced for quick sale",
+      "TaxStatusCode": "",
+      "IMTTimeStamp": "2026-03-04T17:49:27Z",
+      "HasBoatHullID": true,
+      "IsAvailableForPls": false,
+      "NormNominalLength": 7.87,
+      "NormPrice": 34900,
+      "Engines": [
+        {
+          "Make": "Suzuki",
+          "Model": "225 V6",
+          "DriveTransmissionDescription": "Other",
+          "Fuel": "unleaded",
+          "EnginePower": "225|horsepower",
+          "Type": "Outboard",
+          "PropellerType": "3 Blade, Stainless Steel",
+          "Year": 2011,
+          "Hours": 360,
+          "BoatEngineLocationCode": "Center"
+        }
+      ],
+      "Service": [
+        "bw3.provisioning",
+        "mobile-phone-popup",
+        "btol.enhanced.all.listings",
+        "btol.advantagesort.advantage",
+        "boats.com.callrecording",
+        "btol.callrecording",
+        "boats.com.calltracking",
+        "btol.calltracking",
+        "import.yachtcloser",
+        "imt.beta",
+        "branding.imt.features.boats.display",
+        "imt.product.boat",
+        "imt.vbs.auto",
+        "lead.export.leadsmart",
+        "lead.export.dealer",
+        "imt.expiry",
+        "btol.callbuttonimtreporting",
+        "btol.inventorylistingpage",
+        "btol.dealergallary",
+        "btol.dealerreporting",
+        "btol",
+        "boats.com.service.level.premium",
+        "branding.imt.features.trailers.display",
+        "branding.imt.features.engines.display",
+        "account.type.dealer",
+        "soldboats",
+        "soldboats.contracted",
+        "imt.product.trailer",
+        "imt.product.engine",
+        "imt.vbs",
+        "boats.com.c2a.buy",
+        "boats.com.c2a.more",
+        "boats.com.c2a.brochure",
+        "boats.com.c2a.appointment",
+        "boats.com.c2a.tradein",
+        "boats.com",
+        "branding.imt.bw",
+        "export.btol",
+        "export.boats",
+        "imt.tracker.regular"
+      ],
+      "GeneralBoatDescription": [
+        "\u003Cp\u003E\u003Cstrong\u003E2011 Crest 250 SLR Tritoon  With Suzuki 225 also Includes Poly 6,000# Lift $34,900\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EFreshwater only one owner always stored on lift and serviced regularly no dinges or dents, no tears or scratches in Upholstery \u003C/strong\u003E\u003Cstrong\u003EBimini, Changingroom, Rear Lounger\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: inherit;font-weight: bolder;font-size: inherit;line-height: inherit;font-family: inherit;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003E\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: inherit;font-weight: bolder;font-size: inherit;line-height: inherit;font-family: inherit;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003ELength Overall (LOA):\u003C/span\u003E\u003Cspan style=\"border: 0px;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003E 25 Feet 10 Inches\u003C/span\u003E\u003Cspan style=\"border: 0px;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003E\u003Cstrong\u003ECapacity \u003C/strong\u003E14 people\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003EBeam:\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: 400;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E 8 Feet 6 Inches\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003EDry Weight:\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: 400;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E ~2,315 lbs to 2,626 lbs\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E\u003Cbr /\u003E\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: inherit;font-weight: bolder;font-size: inherit;line-height: inherit;font-family: inherit;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003EMaximum Load Capacity:\u003C/span\u003E\u003Cspan style=\"border: 0px;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003E 2,104 lbs\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003EFuel Capacity:\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: 400;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E 26 Gallons\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E\u003Cbr /\u003E\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: inherit;font-weight: bolder;font-size: inherit;line-height: inherit;font-family: inherit;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003EPontoon Diameter:\u003C/span\u003E\u003Cspan style=\"border: 0px;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003E 25 inches\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003EMaterial:\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: 400;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E Aluminum hull with .090 gauge pontoons \u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: inherit;font-weight: bolder;font-size: inherit;line-height: inherit;font-family: inherit;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003EKey Features and Design:\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003ELayout:\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: 400;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E The SLR configuration features a stern-facing, multi-position rear lounge seat.\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E\u003Cbr /\u003E\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: inherit;font-weight: bolder;font-size: inherit;line-height: inherit;font-family: inherit;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003EConstruction:\u003C/span\u003E\u003Cspan style=\"border: 0px;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003E 3/4\" 7-ply wood deck with transferrable warranty, fully sealed structural bulkheads, and thick .100 gauge nose cones.\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003EHelm:\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: 400;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E Classic fiberglass helm with Faria gauges (tach, fuel, trim, volt), tilt steering, and a Bluetooth-capable stereo.\u003C/span\u003E\u003Cspan style=\"border: 0px;font-style: normal;font-weight: bolder;font-size:12pt;line-height: inherit;font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;margin: 0px;padding: 0px;vertical-align: baseline;color: rgb(0, 0, 0);text-indent: 0px;background-color: rgb(255, 255, 255);\"\u003E\u003Cbr /\u003E\u003C/span\u003E\u003C/p\u003E\u003Cp\u003E\u003Cspan style=\"border: 0px;font-style: inherit;font-weight: bolder;font-size: inherit;line-height: inherit;font-family: inherit;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003EAmenities:\u003C/span\u003E\u003Cspan style=\"border: 0px;margin: 0px;padding: 0px;vertical-align: baseline;color: inherit;\"\u003E 4-step stainless steel telescoping ladder, stainless steel pull-up cleats, and quick-release Bimini hardware. \u003C/span\u003E\u003C/p\u003E"
+      ],
+      "Videos": {
+        "title": [
+          ""
+        ],
+        "desc": [
+          ""
+        ],
+        "thumbnailUrl": [
+          "https://images.boatsgroup.com/resize/1/82/59/10078259_20260209215737000.jpg"
+        ],
+        "url": [
+          "https://images.boats.com/videos/1/82/59/10078259_20260209215737000.mp4"
+        ]
+      },
+      "BoatClassCode": [
+        "Pontoon Boats",
+        "Deck Boats",
+        "Walkarounds"
+      ],
+      "EmbeddedVideo": [
+        "https://images.boats.com/videos/1/82/59/10078259_20260209215737000.mp4|"
+      ],
+      "BoatClassCodeNoCaseAlnumOnly": [
+        "Pontoon Boats",
+        "Deck Boats",
+        "Walkarounds"
+      ],
+      "AdditionalDetailDescription": [
+        "\u003Cstrong\u003EDisclaimer\u003C/strong\u003E\u003Cbr\u003E\u003Cp\u003EThe Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice.\u003C/p\u003E"
+      ],
+      "Images": [
+        {
+          "Priority": "0",
+          "Caption": "2011 Crest 250SLR Caribbean pontoon boat docked under a covered marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135051718-1.jpg",
+          "LastModifiedDateTime": "2026-02-09T14:05:55-08:00"
+        },
+        {
+          "Priority": "1",
+          "Caption": "2011 Crest 250 SLR Caribbean boat side view under covered dock.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250-slr-carribbean-power-10078259-20260215053904622-1.jpg",
+          "LastModifiedDateTime": "2026-02-16T09:34:17-08:00"
+        },
+        {
+          "Priority": "2",
+          "Caption": "Cartoon man driving a speedboat with text \"Big Mike Boats & Brokerage, Best Rate = Faster Sales.\"",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250-slr-carribbean-power-10078259-20260223103704856-1.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:52:06-08:00"
+        },
+        {
+          "Priority": "3",
+          "Caption": "2011 Crest 250 SLR Caribbean pontoon boat docked under a metal canopy.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250-slr-carribbean-power-10078259-20260215053904940-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "4",
+          "Caption": "2011 Crest 250SLR Caribbean pontoon boat with sleek aluminum railings and modern design.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135058741-3.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "5",
+          "Caption": "Pontoon boat, Crest 250SLR Caribbean 2011, docked with Suzuki outboard motor.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135052419-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "6",
+          "Caption": "Crest 250 SLR Caribbean 2011 with Suzuki outboard motor at dockside.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250-slr-carribbean-power-10078259-20260215053905314-3.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "7",
+          "Caption": "2011 Crest 250 SLR Caribbean pontoon boat docked under a covered structure.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250-slr-carribbean-power-10078259-20260215053905687-4.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "8",
+          "Caption": "2011 Crest 250SLR Caribbean logo on a sleek black and silver surface.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135053207-3.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "9",
+          "Caption": "Interior of 2011 Crest 250SLR Caribbean boat with beige seating and steering console.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135116966-4.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "10",
+          "Caption": "Luxurious 2011 Crest 250SLR Caribbean pontoon boat interior with plush seating and modern dashboard.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135111191-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "11",
+          "Caption": "Steering console of 2011 Crest 250SLR Caribbean boat with wood accents and gauges.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135111813-3.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "12",
+          "Caption": "Steering console of 2011 Crest 250SLR Caribbean boat with wood accents and control panel.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135116278-3.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "13",
+          "Caption": "Dashboard of a 2011 Crest 250SLR Caribbean with gauges and Humminbird GPS.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135119299-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "14",
+          "Caption": "Jensen audio system in 2011 Crest 250SLR Caribbean boat dashboard.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135114726-1.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "15",
+          "Caption": "2011 Crest 250SLR Caribbean boat interior with beige seating and carpeted floor.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135101888-1.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "16",
+          "Caption": "Luxurious seating on a 2011 Crest 250SLR Caribbean boat, featuring beige upholstery and cup holders.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135057595-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "17",
+          "Caption": "Interior of 2011 Crest 250SLR Caribbean boat with beige seating and carpet.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135118693-1.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "18",
+          "Caption": "Beige leather seating in 2011 Crest 250SLR Caribbean boat with cup holders.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135102585-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "19",
+          "Caption": "2011 Crest 250SLR Caribbean boat interior with beige seating and water view.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135108302-3.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "20",
+          "Caption": "Beige leather seating on 2011 Crest 250SLR Caribbean boat, featuring curved design.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135103545-3.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "21",
+          "Caption": "Beige leather seating on 2011 Crest 250SLR Caribbean boat, showcasing elegant design.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135104466-4.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "22",
+          "Caption": "Beige leather seating on 2011 Crest 250SLR Caribbean boat, featuring elegant stitching.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135106538-1.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "23",
+          "Caption": "Beige leather seating on 2011 Crest 250SLR Caribbean boat with cup holders.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135107509-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "24",
+          "Caption": "2011 Crest 250SLR Caribbean pontoon boat with Suzuki outboard motor docked under a canopy.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135119990-3.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "25",
+          "Caption": "Pontoon boat interior with beige cover, docked near a vibrant kayak. Crest 250SLR Caribbean, 2011 model.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135108934-4.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "26",
+          "Caption": "Beige interior of 2011 Crest 250SLR Caribbean boat with fenders and seating.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135110578-1.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "27",
+          "Caption": "2011 Crest 250SLR Caribbean pontoon boat hulls above water in dock.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135120548-4.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "28",
+          "Caption": "Tachometer of 2011 Crest 250SLR Caribbean, showing RPM at 4,000.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135115606-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "29",
+          "Caption": "Label on Suzuki motor, model DF225, made in Japan, on Crest 250SLR Caribbean 2011.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135054145-4.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "30",
+          "Caption": "Yellow capacity plate on 2011 Crest 250SLR Caribbean boat, 18-person, 300 horsepower limit.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135112513-4.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "31",
+          "Caption": "Poly Lift control box on dock, featuring Hydro Systems label and electrical cords.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135326208-1.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        },
+        {
+          "Priority": "32",
+          "Caption": "Control panel of a 2011 Crest 250SLR Caribbean with Poly Lift blower switch.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/59/2011-crest-250slr-caribbean-power-10078259-20260209135327189-2.jpg",
+          "LastModifiedDateTime": "2026-02-23T10:20:23-08:00"
+        }
+      ],
+      "Marketing": [
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "Priced for quick sale",
+          "ProgramID": "TagLine",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "CUSTOM_CONTACT_SHOW_BROKER",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        }
+      ],
+      "TotalEngineHoursNumeric": 360
+    },
+    {
+      "Source": "IMT",
+      "DocumentID": "10098297",
+      "SalesStatus": "Sold",
+      "CoOpIndicator": "false",
+      "NumberOfEngines": 1,
+      "RegistrationCountryCode": "0",
+      "Owner": {
+        "PartyId": "809039"
+      },
+      "SalesRep": {
+        "PartyId": "809053",
+        "Name": "Mike Oliver"
+      },
+      "CompanyName": "Big Mike Boats & Brokerage",
+      "Office": {
+        "PostalAddress": "33 Three Oaks Drive",
+        "City": "Sunrise Beach",
+        "State": "MO",
+        "PostCode": "65079",
+        "Country": "US",
+        "Email": "mike@bigmikeboats.com",
+        "Phone": "(602) 702-5678",
+        "Name": "Big Mike Boats & Brokerage"
+      },
+      "LastModificationDate": "2026-03-24",
+      "SoldDate": "2026-03-24T00:00:00Z",
+      "OptionActiveIndicator": false,
+      "ItemReceivedDate": "2026-03-02",
+      "OriginalPrice": "28500 USD",
+      "Price": "28500.00 USD",
+      "PriceHideInd": false,
+      "EmbeddedVideoPresent": true,
+      "Image360PhotoPresent": false,
+      "ImmersiveTourPresent": false,
+      "BoatLocation": {
+        "BoatCityName": "Sunrise Beach",
+        "BoatCountryID": "US",
+        "BoatStateCode": "MO"
+      },
+      "BoatCityNameNoCaseAlnumOnly": "Sunrise Beach",
+      "MakeString": "Harris",
+      "MakeStringExact": "Harris",
+      "MakeStringNoCaseAlnumOnly": "Harris",
+      "ModelYear": 2010,
+      "SaleClassCode": "Used",
+      "Model": "Grand Mariner 250",
+      "ModelExact": "Grand Mariner 250",
+      "ModelNoCaseAlnumOnly": "Grand Mariner 250",
+      "BoatCategoryCode": "Power",
+      "BoatName": "",
+      "BoatNameNoCaseAlnumOnly": "",
+      "BuilderName": "",
+      "DesignerName": "",
+      "CruisingSpeedMeasure": null,
+      "PropellerCruisingSpeed": "",
+      "MaximumSpeedMeasure": null,
+      "RangeMeasure": null,
+      "BridgeClearanceMeasure": null,
+      "BeamMeasure": "8.5 ft",
+      "FreeBoardMeasure": null,
+      "CabinHeadroomMeasure": null,
+      "FuelTankCountNumeric": 1,
+      "FuelTankCapacityMeasure": "50|gallon",
+      "FuelTankMaterialCode": "",
+      "DryWeightMeasure": "4,500 lb",
+      "BallastWeightMeasure": null,
+      "DisplacementMeasure": null,
+      "DisplacementTypeCode": "",
+      "TotalEnginePowerQuantity": "200 hp",
+      "DriveTypeCode": "",
+      "BoatKeelCode": "",
+      "ConvertibleSaloonIndicator": false,
+      "WindlassTypeCode": "",
+      "DeadriseMeasure": null,
+      "ElectricalCircuitMeasure": null,
+      "TrimTabsIndicator": false,
+      "BoatHullMaterialCode": "Aluminum",
+      "BoatHullID": "HAMP8617C010",
+      "StockNumber": "",
+      "NominalLength": "29 ft",
+      "LengthOverall": "29 ft",
+      "LengthOfDeck": "25 ft",
+      "ListingTitle": "Priced for quick sale",
+      "TaxStatusCode": "",
+      "IMTTimeStamp": "2026-03-24T13:47:27Z",
+      "HasBoatHullID": true,
+      "IsAvailableForPls": false,
+      "NormNominalLength": 8.84,
+      "NormPrice": 28500,
+      "Engines": [
+        {
+          "Make": "Mercury",
+          "Model": "200 Verado",
+          "Fuel": "unleaded",
+          "EnginePower": "200|horsepower",
+          "Type": "Outboard",
+          "PropellerType": "3 Blade, Stainless Steel",
+          "Year": 2010,
+          "Hours": 890,
+          "BoatEngineLocationCode": "Center"
+        }
+      ],
+      "Service": [
+        "bw3.provisioning",
+        "mobile-phone-popup",
+        "btol.enhanced.all.listings",
+        "btol.advantagesort.advantage",
+        "boats.com.callrecording",
+        "btol.callrecording",
+        "boats.com.calltracking",
+        "btol.calltracking",
+        "import.yachtcloser",
+        "imt.beta",
+        "branding.imt.features.boats.display",
+        "imt.product.boat",
+        "imt.vbs.auto",
+        "lead.export.leadsmart",
+        "lead.export.dealer",
+        "imt.expiry",
+        "btol.callbuttonimtreporting",
+        "btol.inventorylistingpage",
+        "btol.dealergallary",
+        "btol.dealerreporting",
+        "btol",
+        "boats.com.service.level.premium",
+        "branding.imt.features.trailers.display",
+        "branding.imt.features.engines.display",
+        "account.type.dealer",
+        "soldboats",
+        "soldboats.contracted",
+        "imt.product.trailer",
+        "imt.product.engine",
+        "imt.vbs",
+        "boats.com.c2a.buy",
+        "boats.com.c2a.more",
+        "boats.com.c2a.brochure",
+        "boats.com.c2a.appointment",
+        "boats.com.c2a.tradein",
+        "boats.com",
+        "branding.imt.bw",
+        "export.btol",
+        "export.boats",
+        "imt.tracker.regular"
+      ],
+      "GeneralBoatDescription": [
+        "\u003Cp\u003E2010 Harris Grand Mariner 250, a stunning 29-foot pontoon boat that perfectly blends style and functionality. Crafted from durable aluminum, this vessel features a classic pontoon shape, ensuring stability and comfort on the water. Powered by a robust 200 hp Mercury Verado outboard engine, it offers impressive performance with 890 hours of use, making it an excellent choice for both leisurely cruises and spirited outings. Designed for social gatherings, the Grand Mariner accommodates up to 14 passengers, providing ample space for family and friends to enjoy the journey together. The boat's thoughtful design and features make it an ideal platform for creating unforgettable memories on the water. Whether you're relaxing under the sun or enjoying a sunset cruise, this pontoon boat promises a delightful experience for all aboard. Embrace the joy of boating with the Harris Grand Mariner 250, where adventure awaits! Includes Full Automatic Boat Cover with Remote\u003C/p\u003E"
+      ],
+      "Videos": {
+        "title": [
+          ""
+        ],
+        "desc": [
+          ""
+        ],
+        "thumbnailUrl": [
+          "https://images.boatsgroup.com/resize/1/82/97/10098297_20260304161307000.jpg"
+        ],
+        "url": [
+          "https://images.boats.com/videos/1/82/97/10098297_20260304161307000.mp4"
+        ]
+      },
+      "BoatClassCode": [
+        "Pontoon Boats",
+        "Other",
+        "Walkarounds"
+      ],
+      "EmbeddedVideo": [
+        "https://images.boats.com/videos/1/82/97/10098297_20260304161307000.mp4|"
+      ],
+      "BoatClassCodeNoCaseAlnumOnly": [
+        "Pontoon Boats",
+        "Other",
+        "Walkarounds"
+      ],
+      "AdditionalDetailDescription": [
+        "\u003Cstrong\u003EDisclaimer\u003C/strong\u003E\u003Cbr\u003E\u003Cp\u003EThe Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice.\u003C/p\u003E"
+      ],
+      "Images": [
+        {
+          "Priority": "0",
+          "Caption": "2010 Harris Grand Mariner 250 pontoon boat docked in a marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081131760-4.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:51-08:00"
+        },
+        {
+          "Priority": "1",
+          "Caption": "2010 Harris Grand Mariner 250 pontoon boat docked with a green paddleboard attached.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081130073-2.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:56-08:00"
+        },
+        {
+          "Priority": "2",
+          "Caption": "Covered 2010 Harris Grand Mariner 250 pontoon boat docked with green paddleboard nearby.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081138147-1.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:52-08:00"
+        },
+        {
+          "Priority": "3",
+          "Caption": "2010 Harris Grand Mariner 250 pontoon boat with beige seating and American flag.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081134636-2.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:54-08:00"
+        },
+        {
+          "Priority": "4",
+          "Caption": "2010 Harris Grand Mariner 250 pontoon boat docked with Mercury outboard motor.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081133728-1.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:55-08:00"
+        },
+        {
+          "Priority": "5",
+          "Caption": "2010 Harris Grand Mariner 250 pontoon boat with Mercury engine, docked in marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081129165-1.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:49-08:00"
+        },
+        {
+          "Priority": "6",
+          "Caption": "2010 Harris Grand Mariner 250 pontoon boat docked in a covered marina.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081130960-3.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:52-08:00"
+        },
+        {
+          "Priority": "7",
+          "Caption": "Dashboard of a 2010 Harris Grand Mariner 250 boat with gauges and controls.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081109015-3.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:11-08:00"
+        },
+        {
+          "Priority": "8",
+          "Caption": "2010 Harris Grand Mariner 250 pontoon boat with spacious seating under a covered dock.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081127176-4.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:39-08:00"
+        },
+        {
+          "Priority": "9",
+          "Caption": "2010 Harris Grand Mariner 250 pontoon boat interior with beige seating and helm.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081116104-4.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:28-08:00"
+        },
+        {
+          "Priority": "10",
+          "Caption": "Captain's chair on 2010 Harris Grand Mariner 250 boat, overlooking water and dock.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081122458-3.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:45-08:00"
+        },
+        {
+          "Priority": "11",
+          "Caption": "Steering console of a 2010 Harris Grand Mariner 250 boat with gauges and controls.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081123368-4.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:49-08:00"
+        },
+        {
+          "Priority": "12",
+          "Caption": "Interior of a 2010 Harris Grand Mariner 250 pontoon boat with beige seating and control panel.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081125927-2.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:48-08:00"
+        },
+        {
+          "Priority": "13",
+          "Caption": "Steering console of 2010 Harris Grand Mariner 250 boat with gauges and controls.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081125107-1.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:51-08:00"
+        },
+        {
+          "Priority": "14",
+          "Caption": "2010 Harris Grand Mariner 250 boat interior with helm, cup holders, and seating.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081111680-2.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:14-08:00"
+        },
+        {
+          "Priority": "15",
+          "Caption": "Luxurious seating on 2010 Harris Grand Mariner 250 pontoon boat, docked by the water.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081114183-1.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:34-08:00"
+        },
+        {
+          "Priority": "16",
+          "Caption": "Luxurious seating on 2010 Harris Grand Mariner 250 pontoon boat, featuring beige upholstery and cup holders.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081112258-3.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:19-08:00"
+        },
+        {
+          "Priority": "17",
+          "Caption": "Luxurious seating on 2010 Harris Grand Mariner 250 pontoon boat, featuring beige upholstery and built-in speakers.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081112846-4.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:21-08:00"
+        },
+        {
+          "Priority": "18",
+          "Caption": "Luxurious seating on 2010 Harris Grand Mariner 250 boat, featuring beige upholstery and integrated speakers.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081115430-3.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:28-08:00"
+        },
+        {
+          "Priority": "19",
+          "Caption": "Luxurious seating on a 2010 Harris Grand Mariner 250 pontoon boat with cup holders.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081114829-2.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:23-08:00"
+        },
+        {
+          "Priority": "20",
+          "Caption": "2010 Harris Grand Mariner 250 interior with beige seating and carpeted flooring.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081111117-1.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:16-08:00"
+        },
+        {
+          "Priority": "21",
+          "Caption": "Luxurious seating on a 2010 Harris Grand Mariner 250 pontoon boat with cup holders.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081126455-3.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:46-08:00"
+        },
+        {
+          "Priority": "22",
+          "Caption": "Interior view of 2010 Harris Grand Mariner 250 boat with carpeted flooring.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081118595-1.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:35-08:00"
+        },
+        {
+          "Priority": "23",
+          "Caption": "Sony marine stereo system on 2010 Harris Grand Mariner 250 boat dashboard.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081107553-1.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:10-08:00"
+        },
+        {
+          "Priority": "24",
+          "Caption": "Control panel of a 2010 Harris Grand Mariner 250 boat with switches and ignition.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081108250-2.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:11-08:00"
+        },
+        {
+          "Priority": "25",
+          "Caption": "2010 Harris Grand Mariner 250 logo on a black surface with American flag detail.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081135568-3.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:57-08:00"
+        },
+        {
+          "Priority": "26",
+          "Caption": "2010 Harris Grand Mariner 250 logo on boat panel.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081136493-4.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:53-08:00"
+        },
+        {
+          "Priority": "27",
+          "Caption": "Close-up of a Faria tachometer showing 883.9 RPM on a 2010 Harris Grand Mariner 250.",
+          "Uri": "https://images.boatsgroup.com/images/1/82/97/2010-harris-grand-mariner-250-power-10098297-20260304081109615-4.jpg",
+          "LastModifiedDateTime": "2026-03-04T08:26:13-08:00"
+        }
+      ],
+      "Marketing": [
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "Priced for quick sale",
+          "ProgramID": "TagLine",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "CUSTOM_CONTACT_SHOW_BROKER",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        }
+      ],
+      "TotalEngineHoursNumeric": 890
+    },
+    {
+      "Source": "IMT",
+      "DocumentID": "10124980",
+      "SalesStatus": "Sold",
+      "CoOpIndicator": "false",
+      "NumberOfEngines": 1,
+      "RegistrationCountryCode": "0",
+      "Owner": {
+        "PartyId": "809039"
+      },
+      "SalesRep": {
+        "PartyId": "809053",
+        "Name": "Mike Oliver"
+      },
+      "CompanyName": "Big Mike Boats & Brokerage",
+      "Office": {
+        "PostalAddress": "33 Three Oaks Drive",
+        "City": "Sunrise Beach",
+        "State": "MO",
+        "PostCode": "65079",
+        "Country": "US",
+        "Email": "mike@bigmikeboats.com",
+        "Phone": "(602) 702-5678",
+        "Name": "Big Mike Boats & Brokerage"
+      },
+      "LastModificationDate": "2026-03-24",
+      "SoldDate": "2026-03-25T00:00:00Z",
+      "OptionActiveIndicator": true,
+      "ItemReceivedDate": "2026-03-24",
+      "OriginalPrice": "28500 USD",
+      "Price": "28500.00 USD",
+      "PriceHideInd": false,
+      "EmbeddedVideoPresent": false,
+      "Image360PhotoPresent": false,
+      "ImmersiveTourPresent": false,
+      "BoatLocation": {
+        "BoatCityName": "LAKE OZARK",
+        "BoatCountryID": "US",
+        "BoatStateCode": "MO"
+      },
+      "BoatCityNameNoCaseAlnumOnly": "LAKE OZARK",
+      "MakeString": "Harris",
+      "MakeStringExact": "Harris",
+      "MakeStringNoCaseAlnumOnly": "Harris",
+      "ModelYear": 2010,
+      "SaleClassCode": "Used",
+      "Model": "250 SL Grande Mariner",
+      "ModelExact": "250 SL Grande Mariner",
+      "ModelNoCaseAlnumOnly": "250 SL Grande Mariner",
+      "BoatCategoryCode": "Power",
+      "BoatName": "",
+      "BoatNameNoCaseAlnumOnly": "",
+      "BuilderName": "",
+      "DesignerName": "",
+      "CruisingSpeedMeasure": null,
+      "PropellerCruisingSpeed": "",
+      "MaximumSpeedMeasure": null,
+      "RangeMeasure": null,
+      "BridgeClearanceMeasure": null,
+      "BeamMeasure": "8.5 ft",
+      "FreeBoardMeasure": null,
+      "CabinHeadroomMeasure": null,
+      "DryWeightMeasure": null,
+      "BallastWeightMeasure": null,
+      "DisplacementMeasure": null,
+      "DisplacementTypeCode": "",
+      "TotalEnginePowerQuantity": "200 hp",
+      "DriveTypeCode": "",
+      "BoatKeelCode": "",
+      "ConvertibleSaloonIndicator": false,
+      "WindlassTypeCode": "",
+      "DeadriseMeasure": null,
+      "ElectricalCircuitMeasure": null,
+      "TrimTabsIndicator": false,
+      "BoatHullMaterialCode": "Aluminum",
+      "BoatHullID": "HAMP8617C010",
+      "StockNumber": "",
+      "NominalLength": "29 ft",
+      "TaxStatusCode": "",
+      "IMTTimeStamp": "2026-03-24T17:55:37Z",
+      "HasBoatHullID": true,
+      "IsAvailableForPls": false,
+      "NormNominalLength": 8.84,
+      "NormPrice": 28500,
+      "Engines": [
+        {
+          "Make": "Mercury",
+          "Model": "200 HP Verado",
+          "Fuel": "unleaded",
+          "EnginePower": "200|horsepower",
+          "Type": "Outboard 4 Stroke",
+          "Year": 2010,
+          "Hours": 889
+        }
+      ],
+      "Service": [
+        "bw3.provisioning",
+        "mobile-phone-popup",
+        "btol.enhanced.all.listings",
+        "btol.advantagesort.advantage",
+        "boats.com.callrecording",
+        "btol.callrecording",
+        "boats.com.calltracking",
+        "btol.calltracking",
+        "import.yachtcloser",
+        "imt.beta",
+        "branding.imt.features.boats.display",
+        "imt.product.boat",
+        "imt.vbs.auto",
+        "lead.export.leadsmart",
+        "lead.export.dealer",
+        "imt.expiry",
+        "btol.callbuttonimtreporting",
+        "btol.inventorylistingpage",
+        "btol.dealergallary",
+        "btol.dealerreporting",
+        "btol",
+        "boats.com.service.level.premium",
+        "branding.imt.features.trailers.display",
+        "branding.imt.features.engines.display",
+        "account.type.dealer",
+        "soldboats",
+        "soldboats.contracted",
+        "imt.product.trailer",
+        "imt.product.engine",
+        "imt.vbs",
+        "boats.com.c2a.buy",
+        "boats.com.c2a.more",
+        "boats.com.c2a.brochure",
+        "boats.com.c2a.appointment",
+        "boats.com.c2a.tradein",
+        "boats.com",
+        "branding.imt.bw",
+        "export.btol",
+        "export.boats",
+        "imt.tracker.regular"
+      ],
+      "GeneralBoatDescription": [
+        "The Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice."
+      ],
+      "BoatClassCode": [
+        "Pontoon Boats"
+      ],
+      "BoatClassCodeNoCaseAlnumOnly": [
+        "Pontoon Boats"
+      ],
+      "AdditionalDetailDescription": [
+        "\u003Cstrong\u003EAdditional Units Included\u003C/strong\u003E\u003Cbr\u003E\u003Cul\u003E \u003Cli\u003E2010 Mercury 200 Verado\u003C/li\u003E \u003C/ul\u003E",
+        "\u003Cstrong\u003EDisclaimer\u003C/strong\u003E\u003Cbr\u003EThe Company offers the details of this vessel in good faith but cannot guarantee or warrant the accuracy of this information nor warrant the condition of the vessel. A buyer should instruct his agents, or his surveyors, to investigate such details as the buyer desires validated. This vessel is offered subject to prior sale, price change, or withdrawal without notice."
+      ],
+      "Marketing": [
+        {
+          "OpportunityType": "",
+          "OpportunityMethod": "CUSTOM_CONTACT_SHOW_BROKER",
+          "ProgramID": "PUBLIC",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "",
+          "MarketingID": ""
+        },
+        {
+          "OpportunityType": "YACHTCLOSER",
+          "OpportunityMethod": "",
+          "ProgramID": "remoteProductId",
+          "ProgramDescription": "",
+          "ProgramOffer": "",
+          "PublicationID": "imt",
+          "MarketingID": "8131720"
+        }
+      ],
+      "TotalEngineHoursNumeric": 889
+    }
+  ]
+}
