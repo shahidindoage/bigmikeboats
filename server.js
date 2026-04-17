@@ -31,7 +31,7 @@ app.use(express.json());
 // Main page - loads with all boats by default
 app.get("/", async (req, res) => {
   try {
-    const response = await fetch("process.env.BOAT_API_URL_ALL");
+    const response = await fetch(process.env.BOAT_API_URL_ALL);
     const data = await response.json();
     const boats = data.results || data;
     res.render("index", { boats });
@@ -44,7 +44,7 @@ app.get("/", async (req, res) => {
 // API endpoint for all boats
 app.get("/api/boats/all", async (req, res) => {
   try {
-    const response = await fetch("process.env.BOAT_API_URL_ALL");
+    const response = await fetch(process.env.BOAT_API_URL_ALL);
     const data = await response.json();
     const boats = data.results || data;
     res.json({ boats });
@@ -57,7 +57,7 @@ app.get("/api/boats/all", async (req, res) => {
 // API endpoint for active boats
 app.get("/api/boats/active", async (req, res) => {
   try {
-    const response = await fetch("process.env.BOAT_API_URL_ACTIVE");
+    const response = await fetch(process.env.BOAT_API_URL_ACTIVE);
     const data = await response.json();
     const boats = data.results || data;
     res.json({ boats });
@@ -70,7 +70,7 @@ app.get("/api/boats/active", async (req, res) => {
 // API endpoint for sold boats
 app.get("/api/boats/sold", async (req, res) => {
   try {
-    const response = await fetch("process.env.BOAT_API_URL_SOLD");
+    const response = await fetch(process.env.BOAT_API_URL_SOLD);
     const data = await response.json();
     const boats = data.results || data;
     res.json({ boats });
