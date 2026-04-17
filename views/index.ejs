@@ -1082,8 +1082,8 @@ body {
             <span><%= boat.TotalEnginePowerQuantity || "N/A" %></span>
           </div>
           <div class="spec-item">
-            <i class="fas fa-gas-pump"></i>
-            <span><%= boat.FuelType || "N/A" %></span>
+            <i class="fa-solid fa-clock"></i>
+            <span><%= boat.TotalEngineHoursNumeric || "N/A" %></span>
           </div>
         </div>
         
@@ -1381,7 +1381,7 @@ if (status === 'all') {
             <div class="spec-item"><i class="fas fa-ruler-combined"></i><span>${boat.LengthOverall || boat.NominalLength || "N/A"}</span></div>
             <div class="spec-item"><i class="fas fa-calendar"></i><span>${boat.ModelYear || "N/A"}</span></div>
             <div class="spec-item"><i class="fas fa-tachometer-alt"></i><span>${boat.TotalEnginePowerQuantity || "N/A"}</span></div>
-            <div class="spec-item"><i class="fas fa-gas-pump"></i><span>${boat.FuelType || "N/A"}</span></div>
+            <div class="spec-item"><i class="fa-solid fa-clock"></i><span>${boat.TotalEngineHoursNumeric || "N/A"}</span></div>
           </div>
           <div class="location"><i class="fas fa-map-marker-alt"></i><span>${location}</span></div>
           <button class="btn-details" onclick="showDetails(${index})">View Full Details</button>
@@ -1457,8 +1457,8 @@ ${
       <div class="detail-item"><span class="detail-label">Year</span><span class="detail-value">${boat.ModelYear || "N/A"}</span></div>
       <div class="detail-item"><span class="detail-label">Length</span><span class="detail-value">${boat.LengthOverall || boat.NominalLength || "N/A"}</span></div>
       <div class="detail-item"><span class="detail-label">Engine Power</span><span class="detail-value">${boat.TotalEnginePowerQuantity || "N/A"}</span></div>
-      <div class="detail-item"><span class="detail-label">Fuel Type</span><span class="detail-value">${boat.FuelType || "N/A"}</span></div>
-      <div class="detail-item"><span class="detail-label">Hull Material</span><span class="detail-value">${boat.HullMaterial || "N/A"}</span></div>
+      <div class="detail-item"><span class="detail-label">Engine Hours</span><span class="detail-value">${boat.TotalEngineHoursNumeric || "N/A"}</span></div>
+      <div class="detail-item"><span class="detail-label">Hull Material</span><span class="detail-value">${boat.BoatHullMaterialCode || "N/A"}</span></div>
       <div class="detail-item"><span class="detail-label">Location</span><span class="detail-value">${location}</span></div>
     </div>
 
