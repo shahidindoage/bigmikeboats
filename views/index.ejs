@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -952,6 +952,7 @@ body {
     font-size:14px !important;
     padding:0 10px !important;
   }
+}
 </style>
 </head>
 
@@ -1487,8 +1488,47 @@ window.parent.postMessage({
 }, "*");
   /* open modal */
   /* open modal */
+// modal.style.display = "flex";
+// document.body.style.overflow = "hidden";
+/* Open modal */
 modal.style.display = "flex";
 document.body.style.overflow = "hidden";
+
+/* Always start at top */
+requestAnimationFrame(() => {
+
+    const modalContent = document.querySelector(".modal-content");
+    const modalBody = document.querySelector(".modal-body");
+
+    if(modalContent){
+        modalContent.scrollTop = 0;
+    }
+
+    if(modalBody){
+        modalBody.scrollTop = 0;
+    }
+
+    const modalHeader = document.querySelector(".modal-header");
+
+    if(modalHeader){
+        modalHeader.scrollIntoView({
+            behavior: "instant",
+            block: "start"
+        });
+    }
+});
+requestAnimationFrame(() => {
+
+    const titleEl = document.getElementById("boatTitle");
+
+    if(titleEl){
+        titleEl.scrollIntoView({
+            behavior: "instant",
+            block: "start"
+        });
+    }
+
+});
 
 /* Scroll to modal image automatically */
 setTimeout(() => {
